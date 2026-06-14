@@ -1,0 +1,88 @@
+[
+  {
+    "id": "emg_fever",
+    "title": "Fever & Cold",
+    "icon": "🤒",
+    "description": "Medicines, thermometer, ORS, tissues",
+    "itemCount": 8,
+    "productIds": [
+      "prod_089",
+      "prod_092",
+      "prod_093",
+      "prod_096",
+      "prod_112",
+      "prod_097",
+      "prod_221",
+      "prod_094"
+    ]
+  },
+  {
+    "id": "emg_power_cut",
+    "title": "Power Cut",
+    "icon": "🔦",
+    "description": "Candles, flashlight, batteries, power bank",
+    "itemCount": 7,
+    "productIds": [
+      "prod_143",
+      "prod_144",
+      "prod_141",
+      "prod_142",
+      "prod_148",
+      "prod_050",
+      "prod_017"
+    ]
+  },
+  {
+    "id": "emg_baby_care",
+    "title": "Baby Care Emergency",
+    "icon": "👶",
+    "description": "Diapers, wipes, formula, rash cream",
+    "itemCount": 10,
+    "productIds": [
+      "prod_126",
+      "prod_128",
+      "prod_129",
+      "prod_131",
+      "prod_132",
+      "prod_136",
+      "prod_140",
+      "prod_093",
+      "prod_138",
+      "prod_219"
+    ]
+  },
+  {
+    "id": "emg_first_aid",
+    "title": "First Aid",
+    "icon": "🩹",
+    "description": "Bandages, antiseptic, cotton, pain relief",
+    "itemCount": 7,
+    "productIds": [
+      "prod_090",
+      "prod_091",
+      "prod_098",
+      "prod_100",
+      "prod_096",
+      "prod_099",
+      "prod_153"
+    ]
+  },
+  {
+    "id": "emg_natural_disaster",
+    "title": "Natural Disaster Prep",
+    "icon": "🌊",
+    "description": "Water, canned food, flashlight, first aid kit",
+    "itemCount": 9,
+    "productIds": [
+      "prod_146",
+      "prod_154",
+      "prod_141",
+      "prod_142",
+      "prod_145",
+      "prod_153",
+      "prod_143",
+      "prod_144",
+      "prod_151"
+    ]
+  }
+]

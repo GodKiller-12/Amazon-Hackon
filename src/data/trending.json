@@ -1,0 +1,72 @@
+[
+  {
+    "id": "sit_001",
+    "title": "Movie Night",
+    "emoji": "🎬",
+    "description": "Popcorn, snacks, drinks & cozy essentials",
+    "category": "entertainment"
+  },
+  {
+    "id": "sit_002",
+    "title": "Guests Arriving Soon",
+    "emoji": "🏠",
+    "description": "Quick snacks, beverages & essentials for unexpected visitors",
+    "category": "hosting"
+  },
+  {
+    "id": "sit_003",
+    "title": "Exam Prep All-Nighter",
+    "emoji": "📚",
+    "description": "Energy drinks, coffee, snacks & stationery to power through",
+    "category": "study"
+  },
+  {
+    "id": "sit_004",
+    "title": "Weekend Trip",
+    "emoji": "🧳",
+    "description": "Travel essentials, snacks & toiletries for a quick getaway",
+    "category": "travel"
+  },
+  {
+    "id": "sit_005",
+    "title": "House Party",
+    "emoji": "🎉",
+    "description": "Drinks, mixers, disposables & party snacks for a great time",
+    "category": "celebration"
+  },
+  {
+    "id": "sit_006",
+    "title": "New Apartment Setup",
+    "emoji": "🏡",
+    "description": "Cleaning supplies, basics & household essentials for your new place",
+    "category": "home"
+  },
+  {
+    "id": "sit_007",
+    "title": "Romantic Dinner",
+    "emoji": "🕯️",
+    "description": "Candles, chocolates & ingredients for a special evening",
+    "category": "dining"
+  },
+  {
+    "id": "sit_008",
+    "title": "Kids Birthday Party",
+    "emoji": "🎂",
+    "description": "Cake mix, balloons, decorations, juices & party favors",
+    "category": "celebration"
+  },
+  {
+    "id": "sit_009",
+    "title": "Monsoon Preparedness",
+    "emoji": "🌧️",
+    "description": "Umbrellas, raincoats, hot beverages & waterproof essentials",
+    "category": "seasonal"
+  },
+  {
+    "id": "sit_010",
+    "title": "Sunday Brunch",
+    "emoji": "🍳",
+    "description": "Eggs, bread, juice, fresh fruits & breakfast staples",
+    "category": "dining"
+  }
+]

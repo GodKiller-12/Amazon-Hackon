@@ -1,0 +1,3772 @@
+[
+  {
+    "id": "prod_001",
+    "name": "Basmati Rice",
+    "price": 180,
+    "category": "grocery",
+    "tags": [
+      "guests",
+      "party",
+      "new-apartment",
+      "weekend-trip"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "India Gate",
+    "unit": "1 kg"
+  },
+  {
+    "id": "prod_002",
+    "name": "Toor Dal",
+    "price": 140,
+    "category": "grocery",
+    "tags": [
+      "guests",
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Tata Sampann",
+    "unit": "1 kg"
+  },
+  {
+    "id": "prod_003",
+    "name": "Sunflower Oil",
+    "price": 165,
+    "category": "grocery",
+    "tags": [
+      "guests",
+      "new-apartment",
+      "party"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Fortune",
+    "unit": "1 L"
+  },
+  {
+    "id": "prod_004",
+    "name": "Whole Wheat Atta",
+    "price": 260,
+    "category": "grocery",
+    "tags": [
+      "new-apartment",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 25,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Aashirvaad",
+    "unit": "5 kg"
+  },
+  {
+    "id": "prod_005",
+    "name": "Garam Masala",
+    "price": 85,
+    "category": "grocery",
+    "tags": [
+      "guests",
+      "party",
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "MDH",
+    "unit": "100g"
+  },
+  {
+    "id": "prod_006",
+    "name": "Full Cream Milk",
+    "price": 68,
+    "category": "grocery",
+    "tags": [
+      "guests",
+      "exam-prep",
+      "fever-cold",
+      "baby-care"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Amul",
+    "unit": "1 L"
+  },
+  {
+    "id": "prod_007",
+    "name": "White Bread",
+    "price": 40,
+    "category": "grocery",
+    "tags": [
+      "guests",
+      "exam-prep",
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Britannia",
+    "unit": "1 pack"
+  },
+  {
+    "id": "prod_008",
+    "name": "Farm Fresh Eggs",
+    "price": 85,
+    "category": "grocery",
+    "tags": [
+      "guests",
+      "new-apartment",
+      "exam-prep"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Country Delight",
+    "unit": "12 pcs"
+  },
+  {
+    "id": "prod_009",
+    "name": "Salted Butter",
+    "price": 56,
+    "category": "grocery",
+    "tags": [
+      "guests",
+      "party",
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Amul",
+    "unit": "100g"
+  },
+  {
+    "id": "prod_010",
+    "name": "Cheese Slices",
+    "price": 120,
+    "category": "grocery",
+    "tags": [
+      "guests",
+      "party",
+      "movie-night"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Amul",
+    "unit": "10 slices"
+  },
+  {
+    "id": "prod_011",
+    "name": "Sugar",
+    "price": 45,
+    "category": "grocery",
+    "tags": [
+      "guests",
+      "new-apartment",
+      "party"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Uttam",
+    "unit": "1 kg"
+  },
+  {
+    "id": "prod_012",
+    "name": "Tea Leaves",
+    "price": 195,
+    "category": "grocery",
+    "tags": [
+      "guests",
+      "exam-prep",
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Tata Tea Gold",
+    "unit": "250g"
+  },
+  {
+    "id": "prod_013",
+    "name": "Paneer",
+    "price": 90,
+    "category": "grocery",
+    "tags": [
+      "guests",
+      "party"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Amul",
+    "unit": "200g"
+  },
+  {
+    "id": "prod_014",
+    "name": "Curd",
+    "price": 35,
+    "category": "grocery",
+    "tags": [
+      "guests",
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Mother Dairy",
+    "unit": "400g"
+  },
+  {
+    "id": "prod_015",
+    "name": "Turmeric Powder",
+    "price": 55,
+    "category": "grocery",
+    "tags": [
+      "new-apartment",
+      "guests",
+      "fever-cold"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Everest",
+    "unit": "100g"
+  },
+  {
+    "id": "prod_016",
+    "name": "Red Chilli Powder",
+    "price": 65,
+    "category": "grocery",
+    "tags": [
+      "new-apartment",
+      "guests"
+    ],
+    "inStock": false,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Everest",
+    "unit": "100g"
+  },
+  {
+    "id": "prod_017",
+    "name": "Instant Noodles",
+    "price": 14,
+    "category": "grocery",
+    "tags": [
+      "exam-prep",
+      "movie-night",
+      "power-cut"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Maggi",
+    "unit": "1 pack"
+  },
+  {
+    "id": "prod_018",
+    "name": "Ghee",
+    "price": 550,
+    "category": "grocery",
+    "tags": [
+      "guests",
+      "party",
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Amul",
+    "unit": "500 ml"
+  },
+  {
+    "id": "prod_019",
+    "name": "Moong Dal",
+    "price": 130,
+    "category": "grocery",
+    "tags": [
+      "guests",
+      "fever-cold",
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Tata Sampann",
+    "unit": "1 kg"
+  },
+  {
+    "id": "prod_020",
+    "name": "Salt",
+    "price": 22,
+    "category": "grocery",
+    "tags": [
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Tata",
+    "unit": "1 kg"
+  },
+  {
+    "id": "prod_021",
+    "name": "Mustard Oil",
+    "price": 190,
+    "category": "grocery",
+    "tags": [
+      "new-apartment",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Fortune",
+    "unit": "1 L"
+  },
+  {
+    "id": "prod_022",
+    "name": "Cumin Seeds",
+    "price": 95,
+    "category": "grocery",
+    "tags": [
+      "new-apartment",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "MDH",
+    "unit": "100g"
+  },
+  {
+    "id": "prod_023",
+    "name": "Honey",
+    "price": 245,
+    "category": "grocery",
+    "tags": [
+      "fever-cold",
+      "exam-prep",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Dabur",
+    "unit": "250g"
+  },
+  {
+    "id": "prod_024",
+    "name": "Oats",
+    "price": 120,
+    "category": "grocery",
+    "tags": [
+      "exam-prep",
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Quaker",
+    "unit": "400g"
+  },
+  {
+    "id": "prod_025",
+    "name": "Peanut Butter",
+    "price": 199,
+    "category": "grocery",
+    "tags": [
+      "exam-prep",
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Pintola",
+    "unit": "350g"
+  },
+  {
+    "id": "prod_026",
+    "name": "Classic Salted Chips",
+    "price": 30,
+    "category": "snacks",
+    "tags": [
+      "movie-night",
+      "party",
+      "guests",
+      "exam-prep"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Lay's",
+    "unit": "52g"
+  },
+  {
+    "id": "prod_027",
+    "name": "Magic Masala Chips",
+    "price": 30,
+    "category": "snacks",
+    "tags": [
+      "movie-night",
+      "party",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Lay's",
+    "unit": "52g"
+  },
+  {
+    "id": "prod_028",
+    "name": "Cream Biscuits",
+    "price": 30,
+    "category": "snacks",
+    "tags": [
+      "guests",
+      "exam-prep",
+      "movie-night"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Parle",
+    "unit": "1 pack"
+  },
+  {
+    "id": "prod_029",
+    "name": "Marie Gold Biscuits",
+    "price": 35,
+    "category": "snacks",
+    "tags": [
+      "guests",
+      "exam-prep"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Britannia",
+    "unit": "250g"
+  },
+  {
+    "id": "prod_030",
+    "name": "Aloo Bhujia",
+    "price": 75,
+    "category": "snacks",
+    "tags": [
+      "guests",
+      "party",
+      "movie-night"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Haldiram's",
+    "unit": "200g"
+  },
+  {
+    "id": "prod_031",
+    "name": "Moong Dal Namkeen",
+    "price": 60,
+    "category": "snacks",
+    "tags": [
+      "guests",
+      "party",
+      "movie-night"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Haldiram's",
+    "unit": "150g"
+  },
+  {
+    "id": "prod_032",
+    "name": "Butter Popcorn",
+    "price": 40,
+    "category": "snacks",
+    "tags": [
+      "movie-night",
+      "party"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Act II",
+    "unit": "70g"
+  },
+  {
+    "id": "prod_033",
+    "name": "Multigrain Crackers",
+    "price": 85,
+    "category": "snacks",
+    "tags": [
+      "guests",
+      "exam-prep"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Britannia",
+    "unit": "120g"
+  },
+  {
+    "id": "prod_034",
+    "name": "Salted Cashews",
+    "price": 220,
+    "category": "snacks",
+    "tags": [
+      "guests",
+      "party",
+      "movie-night"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Happilo",
+    "unit": "200g"
+  },
+  {
+    "id": "prod_035",
+    "name": "Dairy Milk Silk",
+    "price": 85,
+    "category": "snacks",
+    "tags": [
+      "movie-night",
+      "party",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Cadbury",
+    "unit": "60g"
+  },
+  {
+    "id": "prod_036",
+    "name": "KitKat",
+    "price": 40,
+    "category": "snacks",
+    "tags": [
+      "movie-night",
+      "exam-prep"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "NestlÃ©",
+    "unit": "37.3g"
+  },
+  {
+    "id": "prod_037",
+    "name": "Khakhra (Masala)",
+    "price": 55,
+    "category": "snacks",
+    "tags": [
+      "guests",
+      "weekend-trip"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Jabsons",
+    "unit": "180g"
+  },
+  {
+    "id": "prod_038",
+    "name": "Monaco Biscuits",
+    "price": 25,
+    "category": "snacks",
+    "tags": [
+      "guests",
+      "party"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Parle",
+    "unit": "1 pack"
+  },
+  {
+    "id": "prod_039",
+    "name": "Sev Puri Mix",
+    "price": 65,
+    "category": "snacks",
+    "tags": [
+      "guests",
+      "party"
+    ],
+    "inStock": false,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Haldiram's",
+    "unit": "200g"
+  },
+  {
+    "id": "prod_040",
+    "name": "Dark Fantasy Cookies",
+    "price": 60,
+    "category": "snacks",
+    "tags": [
+      "movie-night",
+      "guests",
+      "exam-prep"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Sunfeast",
+    "unit": "75g"
+  },
+  {
+    "id": "prod_041",
+    "name": "Kurkure Masala Munch",
+    "price": 20,
+    "category": "snacks",
+    "tags": [
+      "movie-night",
+      "party",
+      "exam-prep"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Kurkure",
+    "unit": "45g"
+  },
+  {
+    "id": "prod_042",
+    "name": "Mixed Dry Fruits",
+    "price": 350,
+    "category": "snacks",
+    "tags": [
+      "guests",
+      "party",
+      "exam-prep"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Happilo",
+    "unit": "250g"
+  },
+  {
+    "id": "prod_043",
+    "name": "Pringles Original",
+    "price": 149,
+    "category": "snacks",
+    "tags": [
+      "party",
+      "movie-night",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Pringles",
+    "unit": "107g"
+  },
+  {
+    "id": "prod_044",
+    "name": "Oreo Cookies",
+    "price": 30,
+    "category": "snacks",
+    "tags": [
+      "movie-night",
+      "guests",
+      "exam-prep"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Cadbury",
+    "unit": "120g"
+  },
+  {
+    "id": "prod_045",
+    "name": "Rusk (Toast)",
+    "price": 45,
+    "category": "snacks",
+    "tags": [
+      "guests",
+      "exam-prep"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Britannia",
+    "unit": "200g"
+  },
+  {
+    "id": "prod_046",
+    "name": "Trail Mix",
+    "price": 280,
+    "category": "snacks",
+    "tags": [
+      "weekend-trip",
+      "exam-prep"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Happilo",
+    "unit": "200g"
+  },
+  {
+    "id": "prod_047",
+    "name": "5 Star Chocolate",
+    "price": 20,
+    "category": "snacks",
+    "tags": [
+      "movie-night",
+      "exam-prep"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Cadbury",
+    "unit": "22g"
+  },
+  {
+    "id": "prod_048",
+    "name": "Doritos Nacho",
+    "price": 50,
+    "category": "snacks",
+    "tags": [
+      "movie-night",
+      "party",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Doritos",
+    "unit": "44g"
+  },
+  {
+    "id": "prod_049",
+    "name": "Mineral Water Bottle",
+    "price": 20,
+    "category": "beverages",
+    "tags": [
+      "guests",
+      "party",
+      "weekend-trip",
+      "first-aid",
+      "fever-cold"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Bisleri",
+    "unit": "1 L"
+  },
+  {
+    "id": "prod_050",
+    "name": "Water Bottle (5L)",
+    "price": 55,
+    "category": "beverages",
+    "tags": [
+      "power-cut",
+      "first-aid",
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Bisleri",
+    "unit": "5 L"
+  },
+  {
+    "id": "prod_051",
+    "name": "Coca-Cola",
+    "price": 40,
+    "category": "beverages",
+    "tags": [
+      "party",
+      "movie-night",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Coca-Cola",
+    "unit": "750 ml"
+  },
+  {
+    "id": "prod_052",
+    "name": "Coca-Cola (6-Pack)",
+    "price": 180,
+    "category": "beverages",
+    "tags": [
+      "party",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Coca-Cola",
+    "unit": "6 x 300 ml"
+  },
+  {
+    "id": "prod_053",
+    "name": "Sprite",
+    "price": 40,
+    "category": "beverages",
+    "tags": [
+      "party",
+      "movie-night",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Sprite",
+    "unit": "750 ml"
+  },
+  {
+    "id": "prod_054",
+    "name": "Mango Juice",
+    "price": 25,
+    "category": "beverages",
+    "tags": [
+      "guests",
+      "party",
+      "movie-night"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Frooti",
+    "unit": "200 ml"
+  },
+  {
+    "id": "prod_055",
+    "name": "Mixed Fruit Juice",
+    "price": 90,
+    "category": "beverages",
+    "tags": [
+      "guests",
+      "party",
+      "fever-cold"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Real",
+    "unit": "1 L"
+  },
+  {
+    "id": "prod_056",
+    "name": "Orange Juice",
+    "price": 95,
+    "category": "beverages",
+    "tags": [
+      "guests",
+      "party",
+      "fever-cold",
+      "exam-prep"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Tropicana",
+    "unit": "1 L"
+  },
+  {
+    "id": "prod_057",
+    "name": "Energy Drink",
+    "price": 115,
+    "category": "beverages",
+    "tags": [
+      "exam-prep",
+      "party"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Red Bull",
+    "unit": "250 ml"
+  },
+  {
+    "id": "prod_058",
+    "name": "Sting Energy Drink",
+    "price": 20,
+    "category": "beverages",
+    "tags": [
+      "exam-prep",
+      "party"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Sting",
+    "unit": "250 ml"
+  },
+  {
+    "id": "prod_059",
+    "name": "Green Tea Bags",
+    "price": 160,
+    "category": "beverages",
+    "tags": [
+      "exam-prep",
+      "guests",
+      "fever-cold"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Organic India",
+    "unit": "25 bags"
+  },
+  {
+    "id": "prod_060",
+    "name": "Instant Coffee",
+    "price": 250,
+    "category": "beverages",
+    "tags": [
+      "exam-prep",
+      "guests",
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "NescafÃ©",
+    "unit": "100g"
+  },
+  {
+    "id": "prod_061",
+    "name": "Filter Coffee Powder",
+    "price": 180,
+    "category": "beverages",
+    "tags": [
+      "guests",
+      "exam-prep"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Bru",
+    "unit": "200g"
+  },
+  {
+    "id": "prod_062",
+    "name": "Almond Milk",
+    "price": 280,
+    "category": "beverages",
+    "tags": [
+      "exam-prep",
+      "guests"
+    ],
+    "inStock": false,
+    "deliveryMinutes": 25,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Epigamia",
+    "unit": "1 L"
+  },
+  {
+    "id": "prod_063",
+    "name": "Buttermilk (Chaas)",
+    "price": 25,
+    "category": "beverages",
+    "tags": [
+      "guests",
+      "party"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Amul",
+    "unit": "200 ml"
+  },
+  {
+    "id": "prod_064",
+    "name": "Coconut Water",
+    "price": 40,
+    "category": "beverages",
+    "tags": [
+      "fever-cold",
+      "guests",
+      "weekend-trip"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Paper Boat",
+    "unit": "200 ml"
+  },
+  {
+    "id": "prod_065",
+    "name": "Thumbs Up",
+    "price": 40,
+    "category": "beverages",
+    "tags": [
+      "party",
+      "movie-night"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Thumbs Up",
+    "unit": "750 ml"
+  },
+  {
+    "id": "prod_066",
+    "name": "Limca",
+    "price": 35,
+    "category": "beverages",
+    "tags": [
+      "party",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Limca",
+    "unit": "600 ml"
+  },
+  {
+    "id": "prod_067",
+    "name": "Electral ORS (Orange)",
+    "price": 22,
+    "category": "beverages",
+    "tags": [
+      "fever-cold",
+      "first-aid"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "FDC",
+    "unit": "1 sachet"
+  },
+  {
+    "id": "prod_068",
+    "name": "Lemonade",
+    "price": 30,
+    "category": "beverages",
+    "tags": [
+      "party",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Paper Boat",
+    "unit": "200 ml"
+  },
+  {
+    "id": "prod_069",
+    "name": "Floor Cleaner",
+    "price": 115,
+    "category": "household",
+    "tags": [
+      "new-apartment",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Lizol",
+    "unit": "500 ml"
+  },
+  {
+    "id": "prod_070",
+    "name": "Toilet Cleaner",
+    "price": 85,
+    "category": "household",
+    "tags": [
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Harpic",
+    "unit": "500 ml"
+  },
+  {
+    "id": "prod_071",
+    "name": "Dish Wash Liquid",
+    "price": 99,
+    "category": "household",
+    "tags": [
+      "new-apartment",
+      "guests",
+      "party"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Vim",
+    "unit": "500 ml"
+  },
+  {
+    "id": "prod_072",
+    "name": "Garbage Bags",
+    "price": 79,
+    "category": "household",
+    "tags": [
+      "new-apartment",
+      "party"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Ezee",
+    "unit": "30 bags"
+  },
+  {
+    "id": "prod_073",
+    "name": "Paper Towels",
+    "price": 120,
+    "category": "household",
+    "tags": [
+      "new-apartment",
+      "guests",
+      "party"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Scott",
+    "unit": "2 rolls"
+  },
+  {
+    "id": "prod_074",
+    "name": "Detergent Powder",
+    "price": 145,
+    "category": "household",
+    "tags": [
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 25,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Surf Excel",
+    "unit": "1 kg"
+  },
+  {
+    "id": "prod_075",
+    "name": "White Candles",
+    "price": 60,
+    "category": "household",
+    "tags": [
+      "power-cut",
+      "party"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Reliance",
+    "unit": "6 pcs"
+  },
+  {
+    "id": "prod_076",
+    "name": "Matchbox",
+    "price": 10,
+    "category": "household",
+    "tags": [
+      "power-cut",
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Ship",
+    "unit": "10 boxes"
+  },
+  {
+    "id": "prod_077",
+    "name": "Room Freshener",
+    "price": 175,
+    "category": "household",
+    "tags": [
+      "guests",
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Godrej Aer",
+    "unit": "240 ml"
+  },
+  {
+    "id": "prod_078",
+    "name": "Mosquito Repellent",
+    "price": 75,
+    "category": "household",
+    "tags": [
+      "new-apartment",
+      "power-cut"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Good Knight",
+    "unit": "1 refill"
+  },
+  {
+    "id": "prod_079",
+    "name": "Aluminium Foil",
+    "price": 95,
+    "category": "household",
+    "tags": [
+      "party",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Hindalco",
+    "unit": "9m roll"
+  },
+  {
+    "id": "prod_080",
+    "name": "Disposable Plates",
+    "price": 65,
+    "category": "household",
+    "tags": [
+      "party",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Ecoware",
+    "unit": "25 pcs"
+  },
+  {
+    "id": "prod_081",
+    "name": "Disposable Cups",
+    "price": 50,
+    "category": "household",
+    "tags": [
+      "party",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Ecoware",
+    "unit": "50 pcs"
+  },
+  {
+    "id": "prod_082",
+    "name": "Plastic Wrap (Cling Film)",
+    "price": 85,
+    "category": "household",
+    "tags": [
+      "party",
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Sanita",
+    "unit": "30m"
+  },
+  {
+    "id": "prod_083",
+    "name": "Broom",
+    "price": 120,
+    "category": "household",
+    "tags": [
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 30,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Gala",
+    "unit": "1 pc"
+  },
+  {
+    "id": "prod_084",
+    "name": "Mop Stick",
+    "price": 299,
+    "category": "household",
+    "tags": [
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 30,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Scotch-Brite",
+    "unit": "1 pc"
+  },
+  {
+    "id": "prod_085",
+    "name": "Sponge Scrubber (3 pack)",
+    "price": 45,
+    "category": "household",
+    "tags": [
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Scotch-Brite",
+    "unit": "3 pcs"
+  },
+  {
+    "id": "prod_086",
+    "name": "Hand Wash",
+    "price": 65,
+    "category": "household",
+    "tags": [
+      "new-apartment",
+      "guests",
+      "first-aid"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Dettol",
+    "unit": "200 ml"
+  },
+  {
+    "id": "prod_087",
+    "name": "Glass Cleaner",
+    "price": 110,
+    "category": "household",
+    "tags": [
+      "new-apartment"
+    ],
+    "inStock": false,
+    "deliveryMinutes": 25,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Colin",
+    "unit": "500 ml"
+  },
+  {
+    "id": "prod_088",
+    "name": "Napkins",
+    "price": 40,
+    "category": "household",
+    "tags": [
+      "party",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Scott",
+    "unit": "100 pcs"
+  },
+  {
+    "id": "prod_089",
+    "name": "Paracetamol 500mg",
+    "price": 30,
+    "category": "pharmacy",
+    "tags": [
+      "fever-cold",
+      "first-aid"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Crocin",
+    "unit": "15 tablets"
+  },
+  {
+    "id": "prod_090",
+    "name": "Adhesive Bandages",
+    "price": 45,
+    "category": "pharmacy",
+    "tags": [
+      "first-aid",
+      "baby-care"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Band-Aid",
+    "unit": "10 pcs"
+  },
+  {
+    "id": "prod_091",
+    "name": "Antiseptic Liquid",
+    "price": 72,
+    "category": "pharmacy",
+    "tags": [
+      "first-aid",
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Dettol",
+    "unit": "125 ml"
+  },
+  {
+    "id": "prod_092",
+    "name": "Digital Thermometer",
+    "price": 250,
+    "category": "pharmacy",
+    "tags": [
+      "fever-cold",
+      "baby-care",
+      "first-aid"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Dr. Morepen",
+    "unit": "1 pc"
+  },
+  {
+    "id": "prod_093",
+    "name": "ORS Packets",
+    "price": 45,
+    "category": "pharmacy",
+    "tags": [
+      "fever-cold",
+      "first-aid",
+      "baby-care"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Electral",
+    "unit": "5 sachets"
+  },
+  {
+    "id": "prod_094",
+    "name": "Cough Syrup",
+    "price": 110,
+    "category": "pharmacy",
+    "tags": [
+      "fever-cold"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Benadryl",
+    "unit": "100 ml"
+  },
+  {
+    "id": "prod_095",
+    "name": "Vitamin C Tablets",
+    "price": 150,
+    "category": "pharmacy",
+    "tags": [
+      "fever-cold",
+      "exam-prep"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Limcee",
+    "unit": "30 tablets"
+  },
+  {
+    "id": "prod_096",
+    "name": "Cold Compress Gel Pack",
+    "price": 120,
+    "category": "pharmacy",
+    "tags": [
+      "fever-cold",
+      "first-aid"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "3M",
+    "unit": "1 pc"
+  },
+  {
+    "id": "prod_097",
+    "name": "Vapor Rub",
+    "price": 95,
+    "category": "pharmacy",
+    "tags": [
+      "fever-cold"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Vicks",
+    "unit": "25g"
+  },
+  {
+    "id": "prod_098",
+    "name": "Cotton Roll",
+    "price": 40,
+    "category": "pharmacy",
+    "tags": [
+      "first-aid",
+      "baby-care"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Medline",
+    "unit": "100g"
+  },
+  {
+    "id": "prod_099",
+    "name": "Gauze Bandage",
+    "price": 35,
+    "category": "pharmacy",
+    "tags": [
+      "first-aid"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Johnson & Johnson",
+    "unit": "1 roll"
+  },
+  {
+    "id": "prod_100",
+    "name": "Pain Relief Spray",
+    "price": 160,
+    "category": "pharmacy",
+    "tags": [
+      "first-aid"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Volini",
+    "unit": "40g"
+  },
+  {
+    "id": "prod_101",
+    "name": "Antacid Tablets",
+    "price": 55,
+    "category": "pharmacy",
+    "tags": [
+      "first-aid",
+      "party"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Eno",
+    "unit": "6 sachets"
+  },
+  {
+    "id": "prod_102",
+    "name": "Throat Lozenges",
+    "price": 25,
+    "category": "pharmacy",
+    "tags": [
+      "fever-cold"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Strepsils",
+    "unit": "8 pcs"
+  },
+  {
+    "id": "prod_103",
+    "name": "Multivitamin Tablets",
+    "price": 320,
+    "category": "pharmacy",
+    "tags": [
+      "exam-prep",
+      "fever-cold"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Revital",
+    "unit": "30 capsules"
+  },
+  {
+    "id": "prod_104",
+    "name": "Betadine Solution",
+    "price": 65,
+    "category": "pharmacy",
+    "tags": [
+      "first-aid"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Betadine",
+    "unit": "50 ml"
+  },
+  {
+    "id": "prod_105",
+    "name": "Ibuprofen",
+    "price": 35,
+    "category": "pharmacy",
+    "tags": [
+      "fever-cold",
+      "first-aid"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Brufen",
+    "unit": "10 tablets"
+  },
+  {
+    "id": "prod_106",
+    "name": "Nasal Drops",
+    "price": 55,
+    "category": "pharmacy",
+    "tags": [
+      "fever-cold",
+      "baby-care"
+    ],
+    "inStock": false,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Otrivin",
+    "unit": "10 ml"
+  },
+  {
+    "id": "prod_107",
+    "name": "Hand Sanitizer",
+    "price": 60,
+    "category": "pharmacy",
+    "tags": [
+      "first-aid",
+      "new-apartment",
+      "weekend-trip"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Dettol",
+    "unit": "200 ml"
+  },
+  {
+    "id": "prod_108",
+    "name": "Crepe Bandage",
+    "price": 50,
+    "category": "pharmacy",
+    "tags": [
+      "first-aid"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Hansaplast",
+    "unit": "1 roll"
+  },
+  {
+    "id": "prod_109",
+    "name": "Bathing Soap",
+    "price": 42,
+    "category": "personal-care",
+    "tags": [
+      "new-apartment",
+      "weekend-trip"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Dove",
+    "unit": "100g"
+  },
+  {
+    "id": "prod_110",
+    "name": "Shampoo",
+    "price": 180,
+    "category": "personal-care",
+    "tags": [
+      "new-apartment",
+      "weekend-trip"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Head & Shoulders",
+    "unit": "180 ml"
+  },
+  {
+    "id": "prod_111",
+    "name": "Toothpaste",
+    "price": 95,
+    "category": "personal-care",
+    "tags": [
+      "new-apartment",
+      "weekend-trip"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Colgate",
+    "unit": "150g"
+  },
+  {
+    "id": "prod_112",
+    "name": "Facial Tissues",
+    "price": 65,
+    "category": "personal-care",
+    "tags": [
+      "fever-cold",
+      "guests",
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Kleenex",
+    "unit": "100 pcs"
+  },
+  {
+    "id": "prod_113",
+    "name": "Hand Sanitizer (Pocket)",
+    "price": 30,
+    "category": "personal-care",
+    "tags": [
+      "weekend-trip",
+      "first-aid"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Himalaya",
+    "unit": "50 ml"
+  },
+  {
+    "id": "prod_114",
+    "name": "Face Wash",
+    "price": 140,
+    "category": "personal-care",
+    "tags": [
+      "new-apartment",
+      "weekend-trip"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Himalaya",
+    "unit": "100 ml"
+  },
+  {
+    "id": "prod_115",
+    "name": "Deodorant Spray",
+    "price": 199,
+    "category": "personal-care",
+    "tags": [
+      "party",
+      "guests",
+      "weekend-trip"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Nivea",
+    "unit": "150 ml"
+  },
+  {
+    "id": "prod_116",
+    "name": "Moisturizing Lotion",
+    "price": 175,
+    "category": "personal-care",
+    "tags": [
+      "new-apartment",
+      "weekend-trip"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Nivea",
+    "unit": "200 ml"
+  },
+  {
+    "id": "prod_117",
+    "name": "Lip Balm",
+    "price": 85,
+    "category": "personal-care",
+    "tags": [
+      "weekend-trip",
+      "fever-cold"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Himalaya",
+    "unit": "4.5g"
+  },
+  {
+    "id": "prod_118",
+    "name": "Toothbrush",
+    "price": 40,
+    "category": "personal-care",
+    "tags": [
+      "new-apartment",
+      "weekend-trip"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Oral-B",
+    "unit": "1 pc"
+  },
+  {
+    "id": "prod_119",
+    "name": "Hair Oil",
+    "price": 110,
+    "category": "personal-care",
+    "tags": [
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Parachute",
+    "unit": "200 ml"
+  },
+  {
+    "id": "prod_120",
+    "name": "Sunscreen SPF 50",
+    "price": 350,
+    "category": "personal-care",
+    "tags": [
+      "weekend-trip"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Neutrogena",
+    "unit": "50 ml"
+  },
+  {
+    "id": "prod_121",
+    "name": "Razor (Disposable 5-pack)",
+    "price": 120,
+    "category": "personal-care",
+    "tags": [
+      "weekend-trip",
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Gillette",
+    "unit": "5 pcs"
+  },
+  {
+    "id": "prod_122",
+    "name": "Wet Wipes",
+    "price": 80,
+    "category": "personal-care",
+    "tags": [
+      "baby-care",
+      "weekend-trip",
+      "first-aid"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Himalaya",
+    "unit": "24 pcs"
+  },
+  {
+    "id": "prod_123",
+    "name": "Cotton Pads",
+    "price": 55,
+    "category": "personal-care",
+    "tags": [
+      "first-aid",
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Bella",
+    "unit": "80 pcs"
+  },
+  {
+    "id": "prod_124",
+    "name": "Body Wash",
+    "price": 220,
+    "category": "personal-care",
+    "tags": [
+      "new-apartment",
+      "weekend-trip"
+    ],
+    "inStock": false,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Dove",
+    "unit": "250 ml"
+  },
+  {
+    "id": "prod_125",
+    "name": "Mouthwash",
+    "price": 130,
+    "category": "personal-care",
+    "tags": [
+      "new-apartment",
+      "weekend-trip"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Listerine",
+    "unit": "250 ml"
+  },
+  {
+    "id": "prod_126",
+    "name": "Baby Diapers (Small)",
+    "price": 399,
+    "category": "baby-care",
+    "tags": [
+      "baby-care"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Pampers",
+    "unit": "22 pcs"
+  },
+  {
+    "id": "prod_127",
+    "name": "Baby Diapers (Medium)",
+    "price": 499,
+    "category": "baby-care",
+    "tags": [
+      "baby-care"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Pampers",
+    "unit": "20 pcs"
+  },
+  {
+    "id": "prod_128",
+    "name": "Baby Wet Wipes",
+    "price": 120,
+    "category": "baby-care",
+    "tags": [
+      "baby-care"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Himalaya",
+    "unit": "72 pcs"
+  },
+  {
+    "id": "prod_129",
+    "name": "Baby Formula (Stage 1)",
+    "price": 620,
+    "category": "baby-care",
+    "tags": [
+      "baby-care"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "NestlÃ© Nan Pro",
+    "unit": "400g"
+  },
+  {
+    "id": "prod_130",
+    "name": "Baby Cereal",
+    "price": 210,
+    "category": "baby-care",
+    "tags": [
+      "baby-care"
+    ],
+    "inStock": false,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Cerelac",
+    "unit": "300g"
+  },
+  {
+    "id": "prod_131",
+    "name": "Diaper Rash Cream",
+    "price": 175,
+    "category": "baby-care",
+    "tags": [
+      "baby-care"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Himalaya",
+    "unit": "50g"
+  },
+  {
+    "id": "prod_132",
+    "name": "Baby Oil",
+    "price": 145,
+    "category": "baby-care",
+    "tags": [
+      "baby-care"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Johnson's",
+    "unit": "200 ml"
+  },
+  {
+    "id": "prod_133",
+    "name": "Baby Soap",
+    "price": 65,
+    "category": "baby-care",
+    "tags": [
+      "baby-care"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Johnson's",
+    "unit": "75g"
+  },
+  {
+    "id": "prod_134",
+    "name": "Baby Shampoo",
+    "price": 130,
+    "category": "baby-care",
+    "tags": [
+      "baby-care"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Johnson's",
+    "unit": "200 ml"
+  },
+  {
+    "id": "prod_135",
+    "name": "Baby Feeding Bottle",
+    "price": 250,
+    "category": "baby-care",
+    "tags": [
+      "baby-care"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Pigeon",
+    "unit": "240 ml"
+  },
+  {
+    "id": "prod_136",
+    "name": "Baby Gripe Water",
+    "price": 85,
+    "category": "baby-care",
+    "tags": [
+      "baby-care"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Woodward's",
+    "unit": "130 ml"
+  },
+  {
+    "id": "prod_137",
+    "name": "Baby Powder",
+    "price": 95,
+    "category": "baby-care",
+    "tags": [
+      "baby-care"
+    ],
+    "inStock": false,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Johnson's",
+    "unit": "200g"
+  },
+  {
+    "id": "prod_138",
+    "name": "Baby Lotion",
+    "price": 170,
+    "category": "baby-care",
+    "tags": [
+      "baby-care"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Himalaya",
+    "unit": "200 ml"
+  },
+  {
+    "id": "prod_139",
+    "name": "Teething Gel",
+    "price": 90,
+    "category": "baby-care",
+    "tags": [
+      "baby-care"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Bonjela",
+    "unit": "15g"
+  },
+  {
+    "id": "prod_140",
+    "name": "Baby Thermometer",
+    "price": 350,
+    "category": "baby-care",
+    "tags": [
+      "baby-care",
+      "fever-cold"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Dr. Morepen",
+    "unit": "1 pc"
+  },
+  {
+    "id": "prod_141",
+    "name": "LED Flashlight",
+    "price": 199,
+    "category": "emergency-supplies",
+    "tags": [
+      "power-cut",
+      "first-aid"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Eveready",
+    "unit": "1 pc"
+  },
+  {
+    "id": "prod_142",
+    "name": "AA Batteries (4-pack)",
+    "price": 120,
+    "category": "emergency-supplies",
+    "tags": [
+      "power-cut",
+      "first-aid"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Duracell",
+    "unit": "4 pcs"
+  },
+  {
+    "id": "prod_143",
+    "name": "Emergency Candles (Pack)",
+    "price": 80,
+    "category": "emergency-supplies",
+    "tags": [
+      "power-cut"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Raj",
+    "unit": "10 pcs"
+  },
+  {
+    "id": "prod_144",
+    "name": "Safety Matches (Pack)",
+    "price": 15,
+    "category": "emergency-supplies",
+    "tags": [
+      "power-cut"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Ship",
+    "unit": "10 boxes"
+  },
+  {
+    "id": "prod_145",
+    "name": "First Aid Kit",
+    "price": 450,
+    "category": "emergency-supplies",
+    "tags": [
+      "first-aid",
+      "new-apartment",
+      "weekend-trip"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "St. John",
+    "unit": "1 kit"
+  },
+  {
+    "id": "prod_146",
+    "name": "Water Bottles Pack (6x1L)",
+    "price": 110,
+    "category": "emergency-supplies",
+    "tags": [
+      "power-cut",
+      "first-aid",
+      "party"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Bisleri",
+    "unit": "6 x 1 L"
+  },
+  {
+    "id": "prod_147",
+    "name": "Rechargeable LED Lamp",
+    "price": 599,
+    "category": "emergency-supplies",
+    "tags": [
+      "power-cut"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 25,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Bajaj",
+    "unit": "1 pc"
+  },
+  {
+    "id": "prod_148",
+    "name": "Power Bank (10000 mAh)",
+    "price": 899,
+    "category": "emergency-supplies",
+    "tags": [
+      "power-cut",
+      "weekend-trip"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 30,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Mi",
+    "unit": "1 pc"
+  },
+  {
+    "id": "prod_149",
+    "name": "Mosquito Coils",
+    "price": 40,
+    "category": "emergency-supplies",
+    "tags": [
+      "power-cut"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Good Knight",
+    "unit": "10 coils"
+  },
+  {
+    "id": "prod_150",
+    "name": "Portable Fan (Battery)",
+    "price": 499,
+    "category": "emergency-supplies",
+    "tags": [
+      "power-cut"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 30,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Bajaj",
+    "unit": "1 pc"
+  },
+  {
+    "id": "prod_151",
+    "name": "Emergency Whistle",
+    "price": 50,
+    "category": "emergency-supplies",
+    "tags": [
+      "first-aid",
+      "weekend-trip"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Generic",
+    "unit": "1 pc"
+  },
+  {
+    "id": "prod_152",
+    "name": "Rain Poncho",
+    "price": 99,
+    "category": "emergency-supplies",
+    "tags": [
+      "power-cut",
+      "weekend-trip"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Generic",
+    "unit": "1 pc"
+  },
+  {
+    "id": "prod_153",
+    "name": "Duct Tape",
+    "price": 120,
+    "category": "emergency-supplies",
+    "tags": [
+      "power-cut",
+      "first-aid",
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "3M",
+    "unit": "1 roll"
+  },
+  {
+    "id": "prod_154",
+    "name": "Canned Baked Beans",
+    "price": 99,
+    "category": "emergency-supplies",
+    "tags": [
+      "power-cut",
+      "first-aid"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Heinz",
+    "unit": "200g"
+  },
+  {
+    "id": "prod_155",
+    "name": "Dry Fruits Chikki",
+    "price": 60,
+    "category": "emergency-supplies",
+    "tags": [
+      "power-cut",
+      "weekend-trip",
+      "exam-prep"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Jabsons",
+    "unit": "4 bars"
+  },
+  {
+    "id": "prod_156",
+    "name": "Portable Phone Charger Cable",
+    "price": 199,
+    "category": "emergency-supplies",
+    "tags": [
+      "power-cut",
+      "weekend-trip"
+    ],
+    "inStock": false,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Portronics",
+    "unit": "1 pc"
+  },
+  {
+    "id": "prod_157",
+    "name": "Tarpaulin Sheet",
+    "price": 350,
+    "category": "emergency-supplies",
+    "tags": [
+      "power-cut",
+      "first-aid"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 30,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Generic",
+    "unit": "6x8 ft"
+  },
+  {
+    "id": "prod_158",
+    "name": "Cheese Spread",
+    "price": 75,
+    "category": "grocery",
+    "tags": [
+      "guests",
+      "party",
+      "movie-night"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Amul",
+    "unit": "200g"
+  },
+  {
+    "id": "prod_159",
+    "name": "Mayonnaise",
+    "price": 99,
+    "category": "grocery",
+    "tags": [
+      "party",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Hellmann's",
+    "unit": "250g"
+  },
+  {
+    "id": "prod_160",
+    "name": "Pasta (Penne)",
+    "price": 65,
+    "category": "grocery",
+    "tags": [
+      "guests",
+      "party",
+      "movie-night"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Barilla",
+    "unit": "500g"
+  },
+  {
+    "id": "prod_161",
+    "name": "Pasta Sauce",
+    "price": 145,
+    "category": "grocery",
+    "tags": [
+      "guests",
+      "party",
+      "movie-night"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Del Monte",
+    "unit": "400g"
+  },
+  {
+    "id": "prod_162",
+    "name": "Tomato Ketchup",
+    "price": 110,
+    "category": "grocery",
+    "tags": [
+      "party",
+      "guests",
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Kissan",
+    "unit": "500g"
+  },
+  {
+    "id": "prod_163",
+    "name": "Corn Flakes",
+    "price": 155,
+    "category": "grocery",
+    "tags": [
+      "new-apartment",
+      "exam-prep"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Kellogg's",
+    "unit": "475g"
+  },
+  {
+    "id": "prod_164",
+    "name": "Poha (Flattened Rice)",
+    "price": 55,
+    "category": "grocery",
+    "tags": [
+      "new-apartment",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Patanjali",
+    "unit": "500g"
+  },
+  {
+    "id": "prod_165",
+    "name": "Jam (Mixed Fruit)",
+    "price": 120,
+    "category": "grocery",
+    "tags": [
+      "new-apartment",
+      "guests",
+      "exam-prep"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Kissan",
+    "unit": "200g"
+  },
+  {
+    "id": "prod_166",
+    "name": "Pickle (Mango)",
+    "price": 85,
+    "category": "grocery",
+    "tags": [
+      "new-apartment",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Mother's Recipe",
+    "unit": "200g"
+  },
+  {
+    "id": "prod_167",
+    "name": "Soya Sauce",
+    "price": 60,
+    "category": "grocery",
+    "tags": [
+      "guests",
+      "party"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Ching's",
+    "unit": "200 ml"
+  },
+  {
+    "id": "prod_168",
+    "name": "Garlic Naan (Frozen)",
+    "price": 110,
+    "category": "grocery",
+    "tags": [
+      "guests",
+      "party"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "ITC Master Chef",
+    "unit": "4 pcs"
+  },
+  {
+    "id": "prod_169",
+    "name": "Ice Cream (Vanilla)",
+    "price": 180,
+    "category": "grocery",
+    "tags": [
+      "party",
+      "movie-night",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Amul",
+    "unit": "750 ml"
+  },
+  {
+    "id": "prod_170",
+    "name": "Ready-to-Eat Biryani",
+    "price": 150,
+    "category": "grocery",
+    "tags": [
+      "guests",
+      "power-cut"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "ITC Master Chef",
+    "unit": "300g"
+  },
+  {
+    "id": "prod_171",
+    "name": "Choco Spread",
+    "price": 165,
+    "category": "grocery",
+    "tags": [
+      "exam-prep",
+      "movie-night"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Nutella",
+    "unit": "180g"
+  },
+  {
+    "id": "prod_172",
+    "name": "Classic Lemonade (6-Pack)",
+    "price": 150,
+    "category": "beverages",
+    "tags": [
+      "party",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Paper Boat",
+    "unit": "6 x 200 ml"
+  },
+  {
+    "id": "prod_173",
+    "name": "Tonic Water",
+    "price": 60,
+    "category": "beverages",
+    "tags": [
+      "party",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Schweppes",
+    "unit": "300 ml"
+  },
+  {
+    "id": "prod_174",
+    "name": "Mango Lassi",
+    "price": 35,
+    "category": "beverages",
+    "tags": [
+      "guests",
+      "party"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Amul",
+    "unit": "200 ml"
+  },
+  {
+    "id": "prod_175",
+    "name": "Cold Coffee",
+    "price": 30,
+    "category": "beverages",
+    "tags": [
+      "exam-prep",
+      "movie-night"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Amul",
+    "unit": "200 ml"
+  },
+  {
+    "id": "prod_176",
+    "name": "Samosa (Frozen, 10 pcs)",
+    "price": 150,
+    "category": "snacks",
+    "tags": [
+      "guests",
+      "party"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "ITC Master Chef",
+    "unit": "10 pcs"
+  },
+  {
+    "id": "prod_177",
+    "name": "Spring Rolls (Frozen)",
+    "price": 175,
+    "category": "snacks",
+    "tags": [
+      "guests",
+      "party",
+      "movie-night"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "McCain",
+    "unit": "10 pcs"
+  },
+  {
+    "id": "prod_178",
+    "name": "French Fries (Frozen)",
+    "price": 130,
+    "category": "snacks",
+    "tags": [
+      "movie-night",
+      "party",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "McCain",
+    "unit": "450g"
+  },
+  {
+    "id": "prod_179",
+    "name": "Mixture Namkeen",
+    "price": 80,
+    "category": "snacks",
+    "tags": [
+      "guests",
+      "party",
+      "movie-night"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Haldiram's",
+    "unit": "200g"
+  },
+  {
+    "id": "prod_180",
+    "name": "Dhokla Mix",
+    "price": 55,
+    "category": "snacks",
+    "tags": [
+      "guests"
+    ],
+    "inStock": false,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Gits",
+    "unit": "200g"
+  },
+  {
+    "id": "prod_181",
+    "name": "Hummus Dip",
+    "price": 150,
+    "category": "snacks",
+    "tags": [
+      "party",
+      "guests",
+      "movie-night"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Epigamia",
+    "unit": "200g"
+  },
+  {
+    "id": "prod_182",
+    "name": "Nachos (Cheese)",
+    "price": 99,
+    "category": "snacks",
+    "tags": [
+      "movie-night",
+      "party"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Cornitos",
+    "unit": "150g"
+  },
+  {
+    "id": "prod_183",
+    "name": "Protein Bar",
+    "price": 125,
+    "category": "snacks",
+    "tags": [
+      "exam-prep",
+      "weekend-trip"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "RiteBite",
+    "unit": "40g"
+  },
+  {
+    "id": "prod_184",
+    "name": "Gulab Jamun (Tin)",
+    "price": 175,
+    "category": "snacks",
+    "tags": [
+      "guests",
+      "party"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Haldiram's",
+    "unit": "500g"
+  },
+  {
+    "id": "prod_185",
+    "name": "Rasgulla (Tin)",
+    "price": 160,
+    "category": "snacks",
+    "tags": [
+      "guests",
+      "party"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Haldiram's",
+    "unit": "500g"
+  },
+  {
+    "id": "prod_186",
+    "name": "Fabric Softener",
+    "price": 170,
+    "category": "household",
+    "tags": [
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 25,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Comfort",
+    "unit": "800 ml"
+  },
+  {
+    "id": "prod_187",
+    "name": "Multi-Surface Cleaner",
+    "price": 135,
+    "category": "household",
+    "tags": [
+      "new-apartment",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Mr. Muscle",
+    "unit": "500 ml"
+  },
+  {
+    "id": "prod_188",
+    "name": "Dust Cloth (Microfiber)",
+    "price": 99,
+    "category": "household",
+    "tags": [
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Scotch-Brite",
+    "unit": "3 pcs"
+  },
+  {
+    "id": "prod_189",
+    "name": "Incense Sticks (Agarbatti)",
+    "price": 40,
+    "category": "household",
+    "tags": [
+      "new-apartment",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Cycle",
+    "unit": "120 sticks"
+  },
+  {
+    "id": "prod_190",
+    "name": "Fairy Lights (LED String)",
+    "price": 199,
+    "category": "household",
+    "tags": [
+      "party",
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 25,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Generic",
+    "unit": "10m"
+  },
+  {
+    "id": "prod_191",
+    "name": "Paper Cups (Party)",
+    "price": 60,
+    "category": "household",
+    "tags": [
+      "party",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Ecoware",
+    "unit": "50 pcs"
+  },
+  {
+    "id": "prod_192",
+    "name": "Coriander Powder",
+    "price": 50,
+    "category": "grocery",
+    "tags": [
+      "new-apartment",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Everest",
+    "unit": "100g"
+  },
+  {
+    "id": "prod_193",
+    "name": "Biryani Masala",
+    "price": 70,
+    "category": "grocery",
+    "tags": [
+      "guests",
+      "party"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "MDH",
+    "unit": "50g"
+  },
+  {
+    "id": "prod_194",
+    "name": "Vermicelli (Sevai)",
+    "price": 35,
+    "category": "grocery",
+    "tags": [
+      "guests",
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "MTR",
+    "unit": "180g"
+  },
+  {
+    "id": "prod_195",
+    "name": "Condensed Milk",
+    "price": 110,
+    "category": "grocery",
+    "tags": [
+      "party",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Milkmaid",
+    "unit": "200g"
+  },
+  {
+    "id": "prod_196",
+    "name": "Ready-to-Eat Dal Makhani",
+    "price": 95,
+    "category": "grocery",
+    "tags": [
+      "guests",
+      "exam-prep",
+      "power-cut"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "MTR",
+    "unit": "300g"
+  },
+  {
+    "id": "prod_197",
+    "name": "Coconut Milk",
+    "price": 75,
+    "category": "grocery",
+    "tags": [
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "KLF Nirmal",
+    "unit": "200 ml"
+  },
+  {
+    "id": "prod_198",
+    "name": "Frozen Peas",
+    "price": 65,
+    "category": "grocery",
+    "tags": [
+      "guests",
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Safal",
+    "unit": "500g"
+  },
+  {
+    "id": "prod_199",
+    "name": "Soda Water",
+    "price": 15,
+    "category": "beverages",
+    "tags": [
+      "party",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Bisleri",
+    "unit": "500 ml"
+  },
+  {
+    "id": "prod_200",
+    "name": "Apple Juice",
+    "price": 100,
+    "category": "beverages",
+    "tags": [
+      "guests",
+      "fever-cold"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Real",
+    "unit": "1 L"
+  },
+  {
+    "id": "prod_201",
+    "name": "Chips (Large Party Pack)",
+    "price": 99,
+    "category": "snacks",
+    "tags": [
+      "party",
+      "movie-night",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Lay's",
+    "unit": "177g"
+  },
+  {
+    "id": "prod_202",
+    "name": "Cheese Balls",
+    "price": 45,
+    "category": "snacks",
+    "tags": [
+      "movie-night",
+      "party"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Kurkure",
+    "unit": "55g"
+  },
+  {
+    "id": "prod_203",
+    "name": "Choco Pie (6-pack)",
+    "price": 120,
+    "category": "snacks",
+    "tags": [
+      "movie-night",
+      "exam-prep",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Lotte",
+    "unit": "6 pcs"
+  },
+  {
+    "id": "prod_204",
+    "name": "Roasted Almonds",
+    "price": 299,
+    "category": "snacks",
+    "tags": [
+      "guests",
+      "exam-prep"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Happilo",
+    "unit": "200g"
+  },
+  {
+    "id": "prod_205",
+    "name": "Murukku",
+    "price": 70,
+    "category": "snacks",
+    "tags": [
+      "guests",
+      "party"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Haldiram's",
+    "unit": "150g"
+  },
+  {
+    "id": "prod_206",
+    "name": "Disposable Spoons & Forks",
+    "price": 55,
+    "category": "household",
+    "tags": [
+      "party",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Ecoware",
+    "unit": "24 pcs"
+  },
+  {
+    "id": "prod_207",
+    "name": "Tissue Rolls (4 pack)",
+    "price": 160,
+    "category": "household",
+    "tags": [
+      "new-apartment",
+      "guests",
+      "fever-cold"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Kleenex",
+    "unit": "4 rolls"
+  },
+  {
+    "id": "prod_208",
+    "name": "Balloon Pack (Assorted)",
+    "price": 80,
+    "category": "household",
+    "tags": [
+      "party"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Generic",
+    "unit": "50 pcs"
+  },
+  {
+    "id": "prod_209",
+    "name": "Paper Streamers",
+    "price": 60,
+    "category": "household",
+    "tags": [
+      "party"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Generic",
+    "unit": "6 rolls"
+  },
+  {
+    "id": "prod_210",
+    "name": "Cetirizine (Anti-allergy)",
+    "price": 25,
+    "category": "pharmacy",
+    "tags": [
+      "fever-cold",
+      "first-aid"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Zyrtec",
+    "unit": "10 tablets"
+  },
+  {
+    "id": "prod_211",
+    "name": "Burnol Cream",
+    "price": 55,
+    "category": "pharmacy",
+    "tags": [
+      "first-aid"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Burnol",
+    "unit": "20g"
+  },
+  {
+    "id": "prod_212",
+    "name": "Eye Drops",
+    "price": 80,
+    "category": "pharmacy",
+    "tags": [
+      "exam-prep",
+      "first-aid"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Himalaya",
+    "unit": "10 ml"
+  },
+  {
+    "id": "prod_213",
+    "name": "Muscle Relaxant Gel",
+    "price": 140,
+    "category": "pharmacy",
+    "tags": [
+      "first-aid"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Moov",
+    "unit": "30g"
+  },
+  {
+    "id": "prod_214",
+    "name": "Digestion Tablets",
+    "price": 40,
+    "category": "pharmacy",
+    "tags": [
+      "party",
+      "first-aid"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Hajmola",
+    "unit": "50 tablets"
+  },
+  {
+    "id": "prod_215",
+    "name": "Fever Patch (Cooling)",
+    "price": 65,
+    "category": "pharmacy",
+    "tags": [
+      "fever-cold",
+      "baby-care"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Kool Fever",
+    "unit": "2 pcs"
+  },
+  {
+    "id": "prod_216",
+    "name": "Baby Diaper Pants (Large)",
+    "price": 550,
+    "category": "baby-care",
+    "tags": [
+      "baby-care"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Huggies",
+    "unit": "18 pcs"
+  },
+  {
+    "id": "prod_217",
+    "name": "Baby Food (Apple Puree)",
+    "price": 95,
+    "category": "baby-care",
+    "tags": [
+      "baby-care"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Nestle",
+    "unit": "100g"
+  },
+  {
+    "id": "prod_218",
+    "name": "Baby Laundry Detergent",
+    "price": 199,
+    "category": "baby-care",
+    "tags": [
+      "baby-care"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Himalaya",
+    "unit": "500 ml"
+  },
+  {
+    "id": "prod_219",
+    "name": "Pacifier",
+    "price": 150,
+    "category": "baby-care",
+    "tags": [
+      "baby-care"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Pigeon",
+    "unit": "1 pc"
+  },
+  {
+    "id": "prod_220",
+    "name": "Ginger Lemon Tea",
+    "price": 145,
+    "category": "beverages",
+    "tags": [
+      "fever-cold",
+      "guests",
+      "exam-prep"
+    ],
+    "inStock": false,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Tata Tea",
+    "unit": "25 bags"
+  },
+  {
+    "id": "prod_221",
+    "name": "Honey Lemon Drink",
+    "price": 35,
+    "category": "beverages",
+    "tags": [
+      "fever-cold"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Dabur",
+    "unit": "200 ml"
+  },
+  {
+    "id": "prod_222",
+    "name": "Glucose Powder",
+    "price": 80,
+    "category": "beverages",
+    "tags": [
+      "fever-cold",
+      "exam-prep",
+      "first-aid"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Glucon-D",
+    "unit": "200g"
+  },
+  {
+    "id": "prod_223",
+    "name": "Highlighter Set (5 colors)",
+    "price": 80,
+    "category": "emergency-supplies",
+    "tags": [
+      "exam-prep"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Faber-Castell",
+    "unit": "5 pcs"
+  },
+  {
+    "id": "prod_224",
+    "name": "Sticky Notes",
+    "price": 60,
+    "category": "emergency-supplies",
+    "tags": [
+      "exam-prep"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "3M Post-it",
+    "unit": "100 sheets"
+  },
+  {
+    "id": "prod_225",
+    "name": "Ball Pen (5-pack)",
+    "price": 50,
+    "category": "emergency-supplies",
+    "tags": [
+      "exam-prep"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Cello",
+    "unit": "5 pcs"
+  },
+  {
+    "id": "prod_226",
+    "name": "Notebook (Ruled, 200 pages)",
+    "price": 65,
+    "category": "emergency-supplies",
+    "tags": [
+      "exam-prep"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Classmate",
+    "unit": "1 pc"
+  },
+  {
+    "id": "prod_227",
+    "name": "Desk Lamp (LED)",
+    "price": 499,
+    "category": "emergency-supplies",
+    "tags": [
+      "exam-prep",
+      "power-cut"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 30,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Philips",
+    "unit": "1 pc"
+  },
+  {
+    "id": "prod_228",
+    "name": "Face Mask (N95, 5 pack)",
+    "price": 150,
+    "category": "emergency-supplies",
+    "tags": [
+      "first-aid",
+      "fever-cold"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "3M",
+    "unit": "5 pcs"
+  },
+  {
+    "id": "prod_229",
+    "name": "Travel Kit Pouch",
+    "price": 250,
+    "category": "personal-care",
+    "tags": [
+      "weekend-trip"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 25,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Archies",
+    "unit": "1 pc"
+  },
+  {
+    "id": "prod_230",
+    "name": "Insect Repellent Cream",
+    "price": 70,
+    "category": "personal-care",
+    "tags": [
+      "weekend-trip"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Odomos",
+    "unit": "50g"
+  },
+  {
+    "id": "prod_231",
+    "name": "Dry Shampoo",
+    "price": 250,
+    "category": "personal-care",
+    "tags": [
+      "weekend-trip",
+      "power-cut"
+    ],
+    "inStock": false,
+    "deliveryMinutes": 25,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Batiste",
+    "unit": "200 ml"
+  },
+  {
+    "id": "prod_232",
+    "name": "Hair Comb",
+    "price": 40,
+    "category": "personal-care",
+    "tags": [
+      "new-apartment",
+      "weekend-trip"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Kent",
+    "unit": "1 pc"
+  },
+  {
+    "id": "prod_233",
+    "name": "Hair Ties & Clips Set",
+    "price": 60,
+    "category": "personal-care",
+    "tags": [
+      "weekend-trip"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Generic",
+    "unit": "12 pcs"
+  },
+  {
+    "id": "prod_234",
+    "name": "Paneer Tikka (Frozen)",
+    "price": 220,
+    "category": "snacks",
+    "tags": [
+      "party",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "ITC Master Chef",
+    "unit": "240g"
+  },
+  {
+    "id": "prod_235",
+    "name": "Mini Idli (Frozen)",
+    "price": 110,
+    "category": "snacks",
+    "tags": [
+      "guests",
+      "baby-care"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "MTR",
+    "unit": "16 pcs"
+  },
+  {
+    "id": "prod_236",
+    "name": "Fruit & Nut Mix",
+    "price": 245,
+    "category": "snacks",
+    "tags": [
+      "exam-prep",
+      "weekend-trip"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Happilo",
+    "unit": "200g"
+  },
+  {
+    "id": "prod_237",
+    "name": "Mango Pickle (Small)",
+    "price": 45,
+    "category": "grocery",
+    "tags": [
+      "weekend-trip",
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Mother's Recipe",
+    "unit": "100g"
+  },
+  {
+    "id": "prod_238",
+    "name": "Upma Mix",
+    "price": 60,
+    "category": "grocery",
+    "tags": [
+      "new-apartment",
+      "exam-prep"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "MTR",
+    "unit": "200g"
+  },
+  {
+    "id": "prod_239",
+    "name": "Ready Dosa Batter",
+    "price": 80,
+    "category": "grocery",
+    "tags": [
+      "new-apartment",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "iD Fresh",
+    "unit": "1 L"
+  },
+  {
+    "id": "prod_240",
+    "name": "Paper Straws (50 pack)",
+    "price": 70,
+    "category": "household",
+    "tags": [
+      "party",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Ecoware",
+    "unit": "50 pcs"
+  },
+  {
+    "id": "prod_241",
+    "name": "Scented Candles",
+    "price": 150,
+    "category": "household",
+    "tags": [
+      "party",
+      "guests",
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Ekam",
+    "unit": "2 pcs"
+  },
+  {
+    "id": "prod_242",
+    "name": "Adhesive Hook Set",
+    "price": 150,
+    "category": "household",
+    "tags": [
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "3M Command",
+    "unit": "4 pcs"
+  },
+  {
+    "id": "prod_243",
+    "name": "Shoe Rack (Foldable)",
+    "price": 399,
+    "category": "household",
+    "tags": [
+      "new-apartment"
+    ],
+    "inStock": false,
+    "deliveryMinutes": 30,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Cello",
+    "unit": "1 pc"
+  },
+  {
+    "id": "prod_244",
+    "name": "Instant Soup (Tomato)",
+    "price": 30,
+    "category": "grocery",
+    "tags": [
+      "fever-cold",
+      "exam-prep",
+      "power-cut"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Knorr",
+    "unit": "1 sachet"
+  },
+  {
+    "id": "prod_245",
+    "name": "Biscuit Variety Pack",
+    "price": 150,
+    "category": "snacks",
+    "tags": [
+      "guests",
+      "exam-prep",
+      "weekend-trip"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Britannia",
+    "unit": "1 pack"
+  },
+  {
+    "id": "prod_246",
+    "name": "Coconut Oil (Small)",
+    "price": 55,
+    "category": "grocery",
+    "tags": [
+      "baby-care",
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 15,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Parachute",
+    "unit": "100 ml"
+  },
+  {
+    "id": "prod_247",
+    "name": "Glucose Biscuits",
+    "price": 10,
+    "category": "snacks",
+    "tags": [
+      "fever-cold",
+      "exam-prep",
+      "power-cut"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Parle-G",
+    "unit": "1 pack"
+  },
+  {
+    "id": "prod_248",
+    "name": "Frooti (Pack of 6)",
+    "price": 120,
+    "category": "beverages",
+    "tags": [
+      "party",
+      "movie-night",
+      "guests"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 10,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Frooti",
+    "unit": "6 x 200 ml"
+  },
+  {
+    "id": "prod_249",
+    "name": "Phenyl Floor Cleaner",
+    "price": 55,
+    "category": "household",
+    "tags": [
+      "new-apartment"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 20,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Nimyle",
+    "unit": "500 ml"
+  },
+  {
+    "id": "prod_250",
+    "name": "Extension Cord (4 Socket)",
+    "price": 350,
+    "category": "emergency-supplies",
+    "tags": [
+      "new-apartment",
+      "exam-prep"
+    ],
+    "inStock": true,
+    "deliveryMinutes": 25,
+    "imageUrl": "/images/products/placeholder.png",
+    "brand": "Anchor",
+    "unit": "3m"
+  }
+]
