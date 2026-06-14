@@ -27,6 +27,8 @@ export const modifyCartRequestSchema = z.object({
     )
     .optional()
     .default([]),
+  userId: z.string().optional(),
+  conversationId: z.string().optional(),
 });
 
 export type ModifyCartRequest = z.infer<typeof modifyCartRequestSchema>;

@@ -8,6 +8,7 @@ export const generateCartRequestSchema = z.object({
       householdSize: z.number().int().min(1).max(20).optional().default(2),
     })
     .optional(),
+  userId: z.string().optional(),
 });
 
 export type GenerateCartRequest = z.infer<typeof generateCartRequestSchema>;

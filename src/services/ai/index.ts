@@ -1,9 +1,14 @@
 import { CartItem } from '@/types';
 import { AIProvider, GenerateCartResult, ModifyCartResult } from './types';
+import { UserContext } from './context.types';
 import { MockProvider } from './mockProvider';
 import { BedrockProvider } from './bedrockProvider';
 
 export type { AIProvider, GenerateCartResult, ModifyCartResult, CartDiff } from './types';
+export type { UserContext, EnrichedPromptContext, ExtractedPreferences, FrequentItem } from './context.types';
+export { ContextBuilder } from './contextBuilder';
+export { UserPreferenceExtractor } from './preferenceExtractor';
+export { PromptEnrichment } from './promptEnrichment';
 
 /**
  * Factory function that returns the configured AI provider.
@@ -48,30 +53,31 @@ class ResilientProvider implements AIProvider {
 
   async generateCart(
     situation: string,
-    preferences?: { dietary: string[]; householdSize: number }
+    preferences?: { dietary: string[]; householdSize: number },
+    context?: UserContext
   ): Promise<GenerateCartResult> {
     try {
-      return await this.primary.generateCart(situation, preferences);
+      return await this.primary.generateCart(situation, preferences, context);
     } catch (error) {
       console.error(
         '[AI Provider] Bedrock generateCart failed, falling back to mock:',
         error instanceof Error ? error.message : error
       );
       console.log('[AI Provider] Falling back to mock');
-      return this.fallback.generateCart(situation);
+      return this.fallback.generateCart(situation, preferences, context);
     }
   }
 
-  async modifyCart(currentCart: CartItem[], message: string): Promise<ModifyCartResult> {
+  async modifyCart(currentCart: CartItem[], message: string, context?: UserContext): Promise<ModifyCartResult> {
     try {
-      return await this.primary.modifyCart(currentCart, message);
+      return await this.primary.modifyCart(currentCart, message, context);
     } catch (error) {
       console.error(
         '[AI Provider] Bedrock modifyCart failed, falling back to mock:',
         error instanceof Error ? error.message : error
       );
       console.log('[AI Provider] Falling back to mock');
-      return this.fallback.modifyCart(currentCart, message);
+      return this.fallback.modifyCart(currentCart, message, context);
     }
   }
 }

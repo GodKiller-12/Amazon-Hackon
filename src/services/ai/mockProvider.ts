@@ -1,5 +1,6 @@
 import { CartItem, Product } from '@/types';
 import { AIProvider, GenerateCartResult, ModifyCartResult } from './types';
+import { UserContext } from './context.types';
 import productsData from '@/data/products.json';
 
 const products = productsData as unknown as Product[];
@@ -220,7 +221,7 @@ function getDefaultItems(): CartItem[] {
 }
 
 export class MockProvider implements AIProvider {
-  async generateCart(situation: string): Promise<GenerateCartResult> {
+  async generateCart(situation: string, _preferences?: { dietary: string[]; householdSize: number }, context?: UserContext): Promise<GenerateCartResult> {
     await delay(getRandomDelay());
 
     const lowerSituation = situation.toLowerCase();
@@ -236,7 +237,13 @@ export class MockProvider implements AIProvider {
 
     if (matchedConfig) {
       const itemCount = matchedConfig.tags.includes('guests') || matchedConfig.tags.includes('party') ? 13 : 9;
-      const items = pickItemsForSituation(matchedConfig.tags, matchedConfig.categories, itemCount);
+      let items = pickItemsForSituation(matchedConfig.tags, matchedConfig.categories, itemCount);
+
+      // Apply dietary filtering if context provides restrictions
+      if (context?.profile?.dietaryRestrictions && context.profile.dietaryRestrictions.length > 0) {
+        items = this.applyDietaryFilter(items, context.profile.dietaryRestrictions);
+      }
+
       const estimatedCost = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
       const estimatedDelivery = items.length > 0 ? Math.max(...items.map((i) => i.deliveryMinutes)) : 15;
 
@@ -253,7 +260,13 @@ export class MockProvider implements AIProvider {
     }
 
     // Default fallback
-    const items = getDefaultItems();
+    let items = getDefaultItems();
+
+    // Apply dietary filtering if context provides restrictions
+    if (context?.profile?.dietaryRestrictions && context.profile.dietaryRestrictions.length > 0) {
+      items = this.applyDietaryFilter(items, context.profile.dietaryRestrictions);
+    }
+
     const estimatedCost = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
     const estimatedDelivery = items.length > 0 ? Math.max(...items.map((i) => i.deliveryMinutes)) : 15;
 
@@ -269,7 +282,7 @@ export class MockProvider implements AIProvider {
     };
   }
 
-  async modifyCart(currentCart: CartItem[], message: string): Promise<ModifyCartResult> {
+  async modifyCart(currentCart: CartItem[], message: string, _context?: UserContext): Promise<ModifyCartResult> {
     await delay(getRandomDelay());
 
     const lowerMsg = message.toLowerCase();
@@ -468,5 +481,63 @@ export class MockProvider implements AIProvider {
       reply: "I'm not sure what to change. Try saying things like 'add desserts', 'remove soft drinks', or 'make it budget-friendly'! 🤔",
       cartDiff: { add: [], remove: [], update: [] },
     };
+  }
+
+  /**
+   * Filters items based on dietary restrictions.
+   * Removes items that conflict with the user's dietary preferences.
+   */
+  private applyDietaryFilter(items: CartItem[], dietaryRestrictions: string[]): CartItem[] {
+    const restrictions = dietaryRestrictions.map((r) => r.toLowerCase());
+
+    return items.filter((item) => {
+      const name = item.name.toLowerCase();
+
+      // Vegetarian filter
+      if (restrictions.includes('vegetarian') || restrictions.includes('veg')) {
+        if (
+          name.includes('egg') ||
+          name.includes('chicken') ||
+          name.includes('meat') ||
+          name.includes('fish') ||
+          name.includes('mutton')
+        ) {
+          return false;
+        }
+      }
+
+      // Vegan filter
+      if (restrictions.includes('vegan')) {
+        if (
+          name.includes('egg') ||
+          name.includes('chicken') ||
+          name.includes('meat') ||
+          name.includes('fish') ||
+          name.includes('milk') ||
+          name.includes('cheese') ||
+          name.includes('butter') ||
+          name.includes('paneer') ||
+          name.includes('curd') ||
+          name.includes('ghee')
+        ) {
+          return false;
+        }
+      }
+
+      // Gluten-free filter
+      if (restrictions.includes('gluten-free') || restrictions.includes('gluten free')) {
+        if (
+          name.includes('bread') ||
+          name.includes('noodle') ||
+          name.includes('pasta') ||
+          name.includes('biscuit') ||
+          name.includes('cookie')
+        ) {
+          return false;
+        }
+      }
+
+      return true;
+    });
   }
 }

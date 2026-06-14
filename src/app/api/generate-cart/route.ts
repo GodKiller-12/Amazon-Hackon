@@ -10,7 +10,7 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const validated = generateCartRequestSchema.parse(body);
 
-    const result = await generateCart(validated.situation);
+    const result = await generateCart(validated.situation, validated.userId);
 
     return successResponse(result);
   } catch (error: unknown) {

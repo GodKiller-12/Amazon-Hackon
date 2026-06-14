@@ -11,6 +11,8 @@ import {
 } from '@aws-sdk/client-bedrock-runtime';
 import { CartItem, Product } from '@/types';
 import { AIProvider, GenerateCartResult, ModifyCartResult } from './types';
+import { UserContext } from './context.types';
+import { PromptEnrichment } from './promptEnrichment';
 import { GENERATE_CART_SYSTEM_PROMPT, MODIFY_CART_SYSTEM_PROMPT } from './prompts';
 import productsData from '@/data/products.json';
 
@@ -348,40 +350,64 @@ function validateModifyCartResponse(parsed: Record<string, unknown>): ModifyCart
 }
 
 export class BedrockProvider implements AIProvider {
+  private promptEnrichment: PromptEnrichment;
+
   constructor() {
     // Validate credentials are available at construction time
     getClient();
+    this.promptEnrichment = new PromptEnrichment();
   }
 
   async generateCart(
     situation: string,
-    preferences?: { dietary: string[]; householdSize: number }
+    preferences?: { dietary: string[]; householdSize: number },
+    context?: UserContext
   ): Promise<GenerateCartResult> {
     const catalog = getCondensedCatalog();
 
-    let userMessage = `## Available Product Catalog:\n${catalog}\n\n## User Situation:\n"${situation}"`;
+    let systemPrompt = GENERATE_CART_SYSTEM_PROMPT;
+    let userMessage: string;
 
-    if (preferences) {
-      userMessage += `\n\n## User Preferences:\n- Dietary restrictions: ${preferences.dietary.join(', ') || 'None'}\n- Household size: ${preferences.householdSize}`;
+    if (context) {
+      // Use enriched prompt with user context
+      const enriched = this.promptEnrichment.enrichGeneratePrompt(situation, context);
+      systemPrompt = enriched.systemPrompt;
+      userMessage = `## Available Product Catalog:\n${catalog}\n\n${enriched.userMessage}`;
+    } else {
+      // Fallback: no context, use current behavior
+      userMessage = `## Available Product Catalog:\n${catalog}\n\n## User Situation:\n"${situation}"`;
+
+      if (preferences) {
+        userMessage += `\n\n## User Preferences:\n- Dietary restrictions: ${preferences.dietary.join(', ') || 'None'}\n- Household size: ${preferences.householdSize}`;
+      }
     }
 
-    const responseText = await invokeWithRetry(GENERATE_CART_SYSTEM_PROMPT, userMessage);
+    const responseText = await invokeWithRetry(systemPrompt, userMessage);
     const parsed = parseJsonResponse<Record<string, unknown>>(responseText);
     return validateGenerateCartResponse(parsed);
   }
 
-  async modifyCart(currentCart: CartItem[], message: string): Promise<ModifyCartResult> {
-    // Include current cart items and a subset of available products for additions
-    const cartSummary = currentCart
-      .map((item) => `- ${item.name} (₹${item.price} × ${item.quantity}, id: ${item.id}, category: ${item.category})`)
-      .join('\n');
-
-    // Include condensed catalog for potential additions
+  async modifyCart(currentCart: CartItem[], message: string, context?: UserContext): Promise<ModifyCartResult> {
     const catalog = getCondensedCatalog();
 
-    const userMessage = `## Current Cart:\n${cartSummary}\n\n## Available Products for Additions:\n${catalog}\n\n## User Request:\n"${message}"`;
+    let systemPrompt = MODIFY_CART_SYSTEM_PROMPT;
+    let userMessage: string;
 
-    const responseText = await invokeWithRetry(MODIFY_CART_SYSTEM_PROMPT, userMessage);
+    if (context) {
+      // Use enriched prompt with user context
+      const enriched = this.promptEnrichment.enrichModifyPrompt(message, currentCart, context);
+      systemPrompt = enriched.systemPrompt;
+      userMessage = `## Available Products for Additions:\n${catalog}\n\n${enriched.userMessage}`;
+    } else {
+      // Fallback: no context, use current behavior
+      const cartSummary = currentCart
+        .map((item) => `- ${item.name} (₹${item.price} × ${item.quantity}, id: ${item.id}, category: ${item.category})`)
+        .join('\n');
+
+      userMessage = `## Current Cart:\n${cartSummary}\n\n## Available Products for Additions:\n${catalog}\n\n## User Request:\n"${message}"`;
+    }
+
+    const responseText = await invokeWithRetry(systemPrompt, userMessage);
     const parsed = parseJsonResponse<Record<string, unknown>>(responseText);
     return validateModifyCartResponse(parsed);
   }

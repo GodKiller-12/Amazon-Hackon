@@ -11,7 +11,12 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const validated = modifyCartRequestSchema.parse(body);
 
-    const result = await modifyCart(validated.currentCart as CartItem[], validated.message);
+    const result = await modifyCart(
+      validated.currentCart as CartItem[],
+      validated.message,
+      validated.userId,
+      validated.conversationId
+    );
 
     return successResponse(result);
   } catch (error: unknown) {

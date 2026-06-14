@@ -1,4 +1,5 @@
 import { CartItem } from '@/types';
+import { UserContext } from './context.types';
 
 export interface GenerateCartResult {
   items: CartItem[];
@@ -23,6 +24,6 @@ export interface ModifyCartResult {
 }
 
 export interface AIProvider {
-  generateCart(situation: string, preferences?: { dietary: string[]; householdSize: number }): Promise<GenerateCartResult>;
-  modifyCart(currentCart: CartItem[], message: string): Promise<ModifyCartResult>;
+  generateCart(situation: string, preferences?: { dietary: string[]; householdSize: number }, context?: UserContext): Promise<GenerateCartResult>;
+  modifyCart(currentCart: CartItem[], message: string, context?: UserContext): Promise<ModifyCartResult>;
 }
