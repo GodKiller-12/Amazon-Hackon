@@ -1,10 +1,10 @@
 import { type NextRequest } from 'next/server';
 import { successResponse, errorResponse } from '@/lib/api-response';
 import { getOrderRepository } from '@/repositories';
+import { withAuth } from '@/lib/auth/middleware';
+import { AuthUser } from '@/lib/auth/types';
 
-const DEFAULT_USER_ID = 'default-user';
-
-export async function GET(request: NextRequest) {
+export const GET = withAuth(async (request: NextRequest, user: AuthUser) => {
   try {
     const searchParams = request.nextUrl.searchParams;
     const limitParam = searchParams.get('limit');
@@ -19,7 +19,7 @@ export async function GET(request: NextRequest) {
     }
 
     const orderRepo = getOrderRepository();
-    const orders = await orderRepo.listByUser(DEFAULT_USER_ID, limit);
+    const orders = await orderRepo.listByUser(user.userId, limit);
 
     return successResponse({
       orders,
@@ -29,4 +29,4 @@ export async function GET(request: NextRequest) {
     console.error('[orders/history] Unexpected error:', error);
     return errorResponse('INTERNAL_ERROR', 'An unexpected error occurred', 500);
   }
-}
+});

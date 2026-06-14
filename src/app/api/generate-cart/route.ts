@@ -4,13 +4,17 @@ import { generateCartRequestSchema } from '@/schemas/generate-cart.schema';
 import { generateCart } from '@/services/aiService';
 import { successResponse, errorResponse } from '@/lib/api-response';
 import { ApiError } from '@/lib/api-error';
+import { withOptionalAuth } from '@/lib/auth/middleware';
+import { AuthUser } from '@/lib/auth/types';
 
-export async function POST(request: NextRequest) {
+export const POST = withOptionalAuth(async (request: NextRequest, user: AuthUser | null) => {
   try {
     const body = await request.json();
     const validated = generateCartRequestSchema.parse(body);
 
-    const result = await generateCart(validated.situation, validated.userId);
+    // Use authenticated userId if available, otherwise use the one from the request body
+    const userId = user?.userId || validated.userId;
+    const result = await generateCart(validated.situation, userId);
 
     return successResponse(result);
   } catch (error: unknown) {
@@ -33,4 +37,4 @@ export async function POST(request: NextRequest) {
       500
     );
   }
-}
+});

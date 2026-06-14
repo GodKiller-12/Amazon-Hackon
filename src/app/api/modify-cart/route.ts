@@ -4,17 +4,22 @@ import { modifyCartRequestSchema } from '@/schemas/modify-cart.schema';
 import { modifyCart } from '@/services/aiService';
 import { successResponse, errorResponse } from '@/lib/api-response';
 import { ApiError } from '@/lib/api-error';
+import { withOptionalAuth } from '@/lib/auth/middleware';
+import { AuthUser } from '@/lib/auth/types';
 import { CartItem } from '@/types';
 
-export async function POST(request: NextRequest) {
+export const POST = withOptionalAuth(async (request: NextRequest, user: AuthUser | null) => {
   try {
     const body = await request.json();
     const validated = modifyCartRequestSchema.parse(body);
 
+    // Use authenticated userId if available, otherwise use the one from the request body
+    const userId = user?.userId || validated.userId;
+
     const result = await modifyCart(
       validated.currentCart as CartItem[],
       validated.message,
-      validated.userId,
+      userId,
       validated.conversationId
     );
 
@@ -39,4 +44,4 @@ export async function POST(request: NextRequest) {
       500
     );
   }
-}
+});

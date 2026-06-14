@@ -3,9 +3,9 @@ import { ZodError } from 'zod';
 import { createOrderRequestSchema } from '@/schemas/orders.schema';
 import { successResponse, errorResponse } from '@/lib/api-response';
 import { getOrderRepository } from '@/repositories';
+import { withAuth } from '@/lib/auth/middleware';
+import { AuthUser } from '@/lib/auth/types';
 import { Order, CartItem } from '@/types';
-
-const DEFAULT_USER_ID = 'default-user';
 
 function generateOrderId(): string {
   const timestamp = Date.now().toString(36);
@@ -13,7 +13,7 @@ function generateOrderId(): string {
   return `ORD-${timestamp}-${random}`;
 }
 
-export async function POST(request: NextRequest) {
+export const POST = withAuth(async (request: NextRequest, user: AuthUser) => {
   try {
     const body = await request.json();
     const validated = createOrderRequestSchema.parse(body);
@@ -28,7 +28,7 @@ export async function POST(request: NextRequest) {
     };
 
     const orderRepo = getOrderRepository();
-    const created = await orderRepo.create(DEFAULT_USER_ID, order);
+    const created = await orderRepo.create(user.userId, order);
 
     return successResponse(created, 201);
   } catch (error: unknown) {
@@ -43,4 +43,4 @@ export async function POST(request: NextRequest) {
     console.error('[orders] Unexpected error:', error);
     return errorResponse('INTERNAL_ERROR', 'An unexpected error occurred', 500);
   }
-}
+});
