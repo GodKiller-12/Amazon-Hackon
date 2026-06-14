@@ -1,5 +1,6 @@
 import { Order, OrderStatus, CartItem, Message } from '@/types';
 import { UserProfile, SavedCart } from '@/types/user';
+import { PaymentStatus } from '@/services/payments/types';
 
 /**
  * Repository for managing orders.
@@ -38,4 +39,30 @@ export interface ISavedCartRepository {
   getById(userId: string, cartId: string): Promise<SavedCart | null>;
   listByUser(userId: string): Promise<SavedCart[]>;
   delete(userId: string, cartId: string): Promise<void>;
+}
+
+
+/**
+ * Payment record stored in the database.
+ */
+export interface PaymentRecord {
+  paymentOrderId: string;
+  orderId: string;
+  userId: string;
+  amount: number;
+  currency: string;
+  status: PaymentStatus;
+  razorpayPaymentId?: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
+/**
+ * Repository for managing payment records.
+ */
+export interface IPaymentRepository {
+  create(payment: PaymentRecord): Promise<PaymentRecord>;
+  getByOrderId(orderId: string): Promise<PaymentRecord | null>;
+  getByPaymentOrderId(paymentOrderId: string): Promise<PaymentRecord | null>;
+  updateStatus(paymentOrderId: string, status: PaymentStatus, paymentId?: string): Promise<void>;
 }
