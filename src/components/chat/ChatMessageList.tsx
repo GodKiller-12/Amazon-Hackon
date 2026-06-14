@@ -21,7 +21,7 @@ export function ChatMessageList({ messages, isAITyping }: ChatMessageListProps) 
     <div className="flex-1 overflow-y-auto px-4 py-4 space-y-1">
       {/* Welcome message */}
       {messages.length === 0 && (
-        <div className="flex justify-start mb-3">
+        <div className="flex justify-start mb-3 animate-fade-in-up">
           <div className="flex gap-2 max-w-[85%]">
             <div className="flex-shrink-0 w-7 h-7 rounded-full bg-gradient-to-br from-amazon-orange to-yellow-400 flex items-center justify-center text-sm mt-0.5">
               ✨
@@ -39,17 +39,19 @@ export function ChatMessageList({ messages, isAITyping }: ChatMessageListProps) 
       )}
 
       {/* Messages */}
-      {messages.map((msg) =>
-        msg.role === 'ai' ? (
-          <AIMessage key={msg.id} message={msg} />
-        ) : (
-          <UserMessage key={msg.id} message={msg} />
-        )
-      )}
+      {messages.map((msg) => (
+        <div key={msg.id} className="animate-fade-in-up">
+          {msg.role === 'ai' ? (
+            <AIMessage message={msg} />
+          ) : (
+            <UserMessage message={msg} />
+          )}
+        </div>
+      ))}
 
       {/* Typing indicator */}
       {isAITyping && (
-        <div className="flex justify-start mb-3">
+        <div className="flex justify-start mb-3 animate-fade-in-up">
           <div className="flex gap-2 max-w-[85%]">
             <div className="flex-shrink-0 w-7 h-7 rounded-full bg-gradient-to-br from-amazon-orange to-yellow-400 flex items-center justify-center text-sm mt-0.5">
               ✨

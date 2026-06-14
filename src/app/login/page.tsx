@@ -55,11 +55,15 @@ export default function LoginPage() {
         password,
       });
 
-      login(data.accessToken, {
-        userId: username,
-        name: username === 'demo' ? 'Demo User' : username,
-        phone: username,
-      });
+      login(
+        data.accessToken,
+        {
+          userId: username,
+          name: username === 'demo' ? 'Demo User' : username,
+          phone: username,
+        },
+        data.refreshToken
+      );
 
       router.push('/');
     } catch (err: unknown) {
@@ -116,12 +120,16 @@ export default function LoginPage() {
         password: 'demo1234',
       });
 
-      login(data.accessToken, {
-        userId: 'demo',
-        name: 'Demo User',
-        email: 'demo@urgentcart.com',
-        phone: '+919876543210',
-      });
+      login(
+        data.accessToken,
+        {
+          userId: 'demo',
+          name: 'Demo User',
+          email: 'demo@urgentcart.com',
+          phone: '+919876543210',
+        },
+        data.refreshToken
+      );
 
       router.push('/');
     } catch (err: unknown) {

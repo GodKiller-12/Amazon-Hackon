@@ -107,18 +107,19 @@ export function seedDemoOrders(): boolean {
   };
 
   // Order 3: Exam Prep All-Nighter — 2 weeks ago
+  // Includes prod_051 (Coca-Cola) and prod_026 (Chips) for replenishment overlap
   const examProducts = getProductsByIds([
     'prod_060', // Instant Coffee
     'prod_057', // Energy Drink
     'prod_029', // Marie Gold Biscuits
     'prod_036', // KitKat
     'prod_042', // Mixed Dry Fruits
-    'prod_012', // Tea Leaves
-    'prod_056', // Orange Juice
+    'prod_051', // Coca-Cola (overlap with order 1 and 2)
+    'prod_026', // Classic Salted Chips (overlap with order 1 and 2)
   ]);
   const examItems = toCartItems(
     examProducts,
-    [1, 2, 2, 2, 1, 1, 1],
+    [1, 2, 2, 2, 1, 2, 1],
     'Fuel for the all-night study session'
   );
   const examTotal = examItems.reduce(

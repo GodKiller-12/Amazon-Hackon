@@ -23,6 +23,9 @@ interface UserStore {
   address: Address;
   paymentMethod: PaymentMethod;
   preferences: Preferences;
+  location: { lat: number; lng: number } | null;
+  locationLabel: string;
+  setLocation: (lat: number, lng: number, label: string) => void;
   updatePreferences: (dietary: string[], householdSize: number) => void;
   updateAddress: (address: Address) => void;
   updatePaymentMethod: (paymentMethod: PaymentMethod) => void;
@@ -45,6 +48,11 @@ export const useUserStore = create<UserStore>((set) => ({
     dietary: [],
     householdSize: 2,
   },
+  location: null,
+  locationLabel: '',
+
+  setLocation: (lat, lng, label) =>
+    set({ location: { lat, lng }, locationLabel: label }),
 
   updatePreferences: (dietary, householdSize) =>
     set({ preferences: { dietary, householdSize } }),

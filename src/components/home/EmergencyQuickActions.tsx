@@ -20,7 +20,7 @@ export function EmergencyQuickActions() {
             href={`/emergency/${emergency.id}`}
             className="group flex-shrink-0 snap-start w-[260px] sm:w-[280px]"
           >
-            <div className="h-full rounded-xl border border-red-100 bg-gradient-to-br from-white to-red-50 p-4 shadow-sm hover:shadow-md hover:border-emergency-red/30 active:scale-[0.97] transition-all">
+            <div className="h-full rounded-xl border border-red-100 bg-gradient-to-br from-white to-red-50 p-4 shadow-sm hover:shadow-md hover:border-emergency-red/30 hover:-translate-y-1 active:scale-[0.97] transition-all animate-gentle-pulse">
               {/* Icon and title */}
               <div className="flex items-center gap-3 mb-2">
                 <span className="text-3xl" role="img" aria-label={emergency.title}>
@@ -41,9 +41,14 @@ export function EmergencyQuickActions() {
                 {emergency.description}
               </p>
 
-              {/* CTA hint */}
-              <div className="mt-3 text-xs font-medium text-emergency-red opacity-0 group-hover:opacity-100 transition-opacity">
-                Tap to get instant cart →
+              {/* Badges */}
+              <div className="mt-3 flex items-center justify-between">
+                <span className="inline-flex items-center gap-1 text-[10px] font-semibold text-amber-700 bg-amber-50 px-2 py-0.5 rounded-full">
+                  ⚡ Instant delivery
+                </span>
+                <span className="text-xs font-medium text-emergency-red opacity-0 group-hover:opacity-100 transition-opacity">
+                  Tap to get cart →
+                </span>
               </div>
             </div>
           </Link>

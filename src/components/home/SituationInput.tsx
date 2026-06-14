@@ -1,69 +1,16 @@
 "use client";
 
-import { useState, useEffect, useRef, FormEvent } from "react";
-import { useRouter } from "next/navigation";
+import { useState, FormEvent } from "react";
 import { Sparkles, Loader2, ArrowRight } from "lucide-react";
-import { useCartStore } from "@/stores/cartStore";
-import { generateCart } from "@/services/aiService";
-import { trackEvent } from "@/services/analytics";
+import { useGenerateCart } from "@/hooks/useGenerateCart";
 
-interface SituationInputProps {
-  /** When a trending situation is tapped, this value auto-fills the input */
-  prefillValue?: string;
-  /** Callback to clear the prefill after it's consumed */
-  onPrefillConsumed?: () => void;
-}
-
-export function SituationInput({
-  prefillValue,
-  onPrefillConsumed,
-}: SituationInputProps) {
+export function SituationInput() {
   const [situation, setSituation] = useState("");
-  const isLoading = useCartStore((state) => state.isLoading);
-  const setCartFromAI = useCartStore((state) => state.setCartFromAI);
-  const setLoading = useCartStore((state) => state.setLoading);
-  const router = useRouter();
-  const hasSubmittedPrefill = useRef(false);
-
-  // Handle prefill from trending situations
-  useEffect(() => {
-    if (prefillValue && prefillValue.trim().length >= 3) {
-      setSituation(prefillValue);
-      hasSubmittedPrefill.current = true;
-      onPrefillConsumed?.();
-    }
-  }, [prefillValue, onPrefillConsumed]);
-
-  // Auto-submit after prefill value is set
-  useEffect(() => {
-    if (hasSubmittedPrefill.current && situation === prefillValue) {
-      hasSubmittedPrefill.current = false;
-      submitSituation(situation);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [situation]);
-
-  async function submitSituation(value: string) {
-    if (value.trim().length < 3 || isLoading) return;
-
-    trackEvent('situation_submitted', { situation: value, source: 'home' });
-
-    setLoading(true);
-    try {
-      const result = await generateCart(value);
-      setCartFromAI(result.items, result.situationLabel);
-      router.push("/cart");
-    } catch {
-      // Fallback — unlikely with mock service
-      console.error("Failed to generate cart");
-    } finally {
-      setLoading(false);
-    }
-  }
+  const { generate, isLoading } = useGenerateCart();
 
   function handleSubmit(e: FormEvent) {
     e.preventDefault();
-    submitSituation(situation);
+    generate(situation, 'home');
   }
 
   return (

@@ -13,7 +13,7 @@ export function CartItemRow({ item }: CartItemRowProps) {
   const removeItem = useCartStore((state) => state.removeItem);
 
   return (
-    <div className="flex items-center gap-3 py-3 border-b border-gray-100 last:border-b-0">
+    <div className="flex items-center gap-3 py-3 border-b border-gray-100 last:border-b-0 animate-scale-in">
       {/* Product image placeholder */}
       <div className="w-16 h-16 rounded-lg bg-gray-100 flex items-center justify-center flex-shrink-0">
         <span className="text-2xl">📦</span>

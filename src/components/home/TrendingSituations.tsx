@@ -1,13 +1,11 @@
 "use client";
 
 import trending from "@/data/trending.json";
+import { useGenerateCart } from "@/hooks/useGenerateCart";
 
-interface TrendingSituationsProps {
-  /** Called when a trending situation card is tapped, passing the situation title */
-  onSituationTap: (title: string) => void;
-}
+export function TrendingSituations() {
+  const { generate, isLoading } = useGenerateCart();
 
-export function TrendingSituations({ onSituationTap }: TrendingSituationsProps) {
   return (
     <section className="w-full">
       <h2 className="text-lg font-bold text-foreground mb-3 px-1">
@@ -15,12 +13,14 @@ export function TrendingSituations({ onSituationTap }: TrendingSituationsProps) 
       </h2>
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-        {trending.map((situation) => (
+        {trending.map((situation, index) => (
           <button
             key={situation.id}
-            onClick={() => onSituationTap(situation.title)}
-            className="group text-left rounded-xl border border-gray-100 bg-white p-4 shadow-sm hover:shadow-md hover:border-amazon-orange/30 active:scale-[0.97] transition-all min-h-[100px]"
-            aria-label={`Auto-fill: ${situation.title}`}
+            onClick={() => generate(situation.title, 'trending')}
+            disabled={isLoading}
+            className="group text-left rounded-xl border border-gray-100 bg-white p-4 shadow-sm hover:shadow-md hover:border-amazon-orange/30 active:scale-[0.97] disabled:opacity-50 disabled:cursor-not-allowed transition-all min-h-[100px] animate-fade-in-up"
+            style={{ animationDelay: `${index * 80}ms`, animationFillMode: 'both' }}
+            aria-label={`Generate cart for: ${situation.title}`}
           >
             {/* Emoji */}
             <span className="text-2xl mb-2 block" role="img" aria-hidden="true">

@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { User, MapPin, CreditCard, Leaf, LogOut } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -15,8 +16,13 @@ export default function ProfilePage() {
   const paymentMethod = useUserStore((state) => state.paymentMethod);
   const preferences = useUserStore((state) => state.preferences);
 
+  useEffect(() => {
+    if (!isAuthenticated) {
+      router.push('/login');
+    }
+  }, [isAuthenticated, router]);
+
   if (!isAuthenticated) {
-    router.push('/login');
     return null;
   }
 

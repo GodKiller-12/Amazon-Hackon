@@ -23,7 +23,7 @@ export function BuyNowButton() {
       <Button
         onClick={handleBuyNow}
         disabled={isDisabled}
-        className="w-full h-12 bg-amazon-orange hover:bg-amazon-orange/90 text-white font-bold text-base rounded-xl shadow-md disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-full h-12 bg-amazon-orange hover:bg-amazon-orange/90 text-white font-bold text-base rounded-xl shadow-md disabled:opacity-50 disabled:cursor-not-allowed hover:scale-[1.02] transition-transform"
       >
         <ShoppingCart className="h-5 w-5" />
         Proceed to Checkout

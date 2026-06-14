@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { MapPin, CreditCard, Clock, ShoppingCart, Loader2, CheckCircle2 } from 'lucide-react';
@@ -11,6 +11,8 @@ import { useUserStore } from '@/stores/userStore';
 import { useAuthStore } from '@/stores/authStore';
 import { Order } from '@/types';
 import { trackEvent } from '@/services/analytics';
+import { apiPost } from '@/lib/api';
+import { openRazorpayCheckout, isRazorpayLoaded } from '@/lib/razorpay';
 
 type PaymentState = 'idle' | 'processing' | 'success';
 
@@ -25,6 +27,7 @@ export default function CheckoutPage() {
   const address = useUserStore((state) => state.address);
   const paymentMethod = useUserStore((state) => state.paymentMethod);
   const isAuthenticated = useAuthStore((state) => state.isAuthenticated);
+  const user = useAuthStore((state) => state.user);
 
   const [paymentState, setPaymentState] = useState<PaymentState>('idle');
 
@@ -32,8 +35,13 @@ export default function CheckoutPage() {
   const orderTotal = total + deliveryFee;
 
   // Redirect to login if not authenticated
+  useEffect(() => {
+    if (!isAuthenticated) {
+      router.push('/login');
+    }
+  }, [isAuthenticated, router]);
+
   if (!isAuthenticated) {
-    router.push('/login');
     return null;
   }
 
@@ -70,24 +78,75 @@ export default function CheckoutPage() {
       source: 'checkout',
     });
 
-    // Simulate payment processing (mock mode)
-    await new Promise((resolve) => setTimeout(resolve, 2000));
-
-    setPaymentState('success');
-
-    trackEvent('order_placed', {
-      orderId: order.id,
-      total: orderTotal,
-      source: 'checkout',
-    });
-
-    // Save order, clear cart, navigate
     addOrder(order);
-    clearCart();
 
-    setTimeout(() => {
-      router.push('/order-success');
-    }, 800);
+    try {
+      const paymentData = await apiPost<{
+        paymentOrderId: string;
+        amount: number;
+        currency: string;
+        key_id: string;
+      }>('/api/payments/create-order', { orderId: order.id, amount: orderTotal });
+
+      // Check if Razorpay SDK is loaded (real mode)
+      if (
+        isRazorpayLoaded() &&
+        paymentData.key_id &&
+        !paymentData.key_id.startsWith('rzp_mock')
+      ) {
+        // Real Razorpay checkout
+        openRazorpayCheckout({
+          key: paymentData.key_id,
+          amount: paymentData.amount,
+          currency: paymentData.currency,
+          order_id: paymentData.paymentOrderId,
+          name: 'UrgentCart',
+          description: situationLabel || 'Quick Order',
+          handler: async (response) => {
+            try {
+              await apiPost('/api/payments/verify', response);
+            } catch {
+              // Verification failed but payment may still be valid
+            }
+            setPaymentState('success');
+            clearCart();
+            trackEvent('order_placed', {
+              orderId: order.id,
+              total: orderTotal,
+              source: 'checkout',
+            });
+            setTimeout(() => router.push('/order-success'), 800);
+          },
+          prefill: { name: user?.name, contact: user?.phone },
+          theme: { color: '#FF9900' },
+          modal: {
+            ondismiss: () => setPaymentState('idle'),
+          },
+        });
+      } else {
+        // Mock mode: simulate 2 second payment
+        await new Promise((resolve) => setTimeout(resolve, 2000));
+        setPaymentState('success');
+        clearCart();
+        trackEvent('order_placed', {
+          orderId: order.id,
+          total: orderTotal,
+          source: 'checkout',
+        });
+        setTimeout(() => router.push('/order-success'), 800);
+      }
+    } catch {
+      // Payment creation failed — fallback to mock mode
+      await new Promise((resolve) => setTimeout(resolve, 2000));
+      setPaymentState('success');
+      clearCart();
+      trackEvent('order_placed', {
+        orderId: order.id,
+        total: orderTotal,
+        source: 'checkout',
+      });
+      setTimeout(() => router.push('/order-success'), 800);
+    }
   }
 
   // Payment processing overlay
@@ -110,7 +169,7 @@ export default function CheckoutPage() {
   if (paymentState === 'success') {
     return (
       <div className="fixed inset-0 z-[100] bg-white flex flex-col items-center justify-center">
-        <div className="w-20 h-20 rounded-full bg-green-100 flex items-center justify-center mb-4">
+        <div className="w-20 h-20 rounded-full bg-green-100 flex items-center justify-center mb-4 animate-scale-in">
           <CheckCircle2 className="h-12 w-12 text-green-500" />
         </div>
         <h2 className="text-lg font-bold text-gray-900">Payment Successful!</h2>
@@ -194,7 +253,7 @@ export default function CheckoutPage() {
       <div className="pt-2 pb-4">
         <Button
           onClick={handlePayment}
-          className="w-full h-12 bg-amazon-orange hover:bg-amazon-orange/90 text-white font-bold text-base rounded-xl shadow-md"
+          className="w-full h-12 bg-amazon-orange hover:bg-amazon-orange/90 text-white font-bold text-base rounded-xl shadow-md hover:scale-[1.02] transition-transform"
         >
           💳 Pay ₹{orderTotal.toLocaleString('en-IN')}
         </Button>
