@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { BottomNav } from "@/components/layout/BottomNav";
 import { Toaster } from "@/components/ui/toaster";
+import { AuthProvider } from "@/components/providers/AuthProvider";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -32,10 +33,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-background text-foreground font-sans">
-        <Header />
-        <main className="flex-1 pt-14 pb-16">{children}</main>
-        <BottomNav />
-        <Toaster />
+        <AuthProvider>
+          <Header />
+          <main className="flex-1 pt-14 pb-16">{children}</main>
+          <BottomNav />
+          <Toaster />
+        </AuthProvider>
       </body>
     </html>
   );
