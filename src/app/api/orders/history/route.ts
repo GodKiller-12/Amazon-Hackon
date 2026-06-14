@@ -1,6 +1,8 @@
 import { type NextRequest } from 'next/server';
 import { successResponse, errorResponse } from '@/lib/api-response';
-import { getOrders } from '@/lib/order-store';
+import { getOrderRepository } from '@/repositories';
+
+const DEFAULT_USER_ID = 'default-user';
 
 export async function GET(request: NextRequest) {
   try {
@@ -16,7 +18,8 @@ export async function GET(request: NextRequest) {
       );
     }
 
-    const orders = getOrders(limit);
+    const orderRepo = getOrderRepository();
+    const orders = await orderRepo.listByUser(DEFAULT_USER_ID, limit);
 
     return successResponse({
       orders,

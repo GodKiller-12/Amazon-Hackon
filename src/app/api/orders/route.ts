@@ -2,8 +2,10 @@ import { type NextRequest } from 'next/server';
 import { ZodError } from 'zod';
 import { createOrderRequestSchema } from '@/schemas/orders.schema';
 import { successResponse, errorResponse } from '@/lib/api-response';
-import { addOrder } from '@/lib/order-store';
+import { getOrderRepository } from '@/repositories';
 import { Order, CartItem } from '@/types';
+
+const DEFAULT_USER_ID = 'default-user';
 
 function generateOrderId(): string {
   const timestamp = Date.now().toString(36);
@@ -25,7 +27,8 @@ export async function POST(request: NextRequest) {
       status: 'placed',
     };
 
-    const created = addOrder(order);
+    const orderRepo = getOrderRepository();
+    const created = await orderRepo.create(DEFAULT_USER_ID, order);
 
     return successResponse(created, 201);
   } catch (error: unknown) {
